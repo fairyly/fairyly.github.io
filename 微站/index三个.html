@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/jquery.mobile.flatui_index.css" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <link rel="stylesheet" type="text/css" href="font-awesome-4.3.0/css/font-awesome.css" />
+  <script src="js/jquery.js"></script>
+  <script src="js/jquery.mobile-1.4.0-rc.1.js"></script>
+  <style type="text/css">
+html body .ui-btn.ui-btn-g{border-radius: 0}
+html .ui-page-theme-a .ui-body-inherit{border-radius: 0}
+html .ui-overlay-a .bg{background:url(images/bg.jpg); background-size: 100%}
+
+.header_index{ margin-bottom: 20px; height: 40px;}
+.index_link{ float: left; line-height: 40px; color: #fff; font-weight: 700; padding-left: 5px;}
+.login_link{ float: right; color: #fff; line-height: 40px; }
+.login_link a{color: #fff; padding-top: 0}
+.login_link a i{ font-weight: 100; }
+html .ui-page-theme-a a{color: #fff; line-height: 40px; padding-right: 5px; text-decoration: none}
+.bai{ color: #fff; margin-top: 0; border-bottom: dotted 1px #999;}
+  </style>
+</head>
+<body>
+  <div data-role="page"  class="bg">
+
+    <div data-role="panel" id="panel" data-position="right" data-theme="a" data-display="push">
+       <ul data-role="listview"  data-theme="c" data-icon="false">
+        <li><a href="index.html"><i class="fa fa-home"></i>首页</a></li>
+        <li><a href="#"><i class="fa fa-user"></i>微商明星</a></li>
+        <li><a href="#"><i class="fa fa-users"></i>微信群</a></li>
+        <li><a href="#"><i class="fa fa-list-alt"></i>发布名片</a></li>
+        <li><a href="#"><i class="fa fa-th-large"></i>发布群</a></li>
+        <li><a href="#"><i class="fa fa-flag"></i>推广社区</a></li>
+        <li><a href="#"><i class="fa fa-truck"></i>货源中心</a></li>
+        <li><a href="#"><i class="fa fa-flag-checkered"></i>个人中心</a></li>
+        <li><a href="#"><i class="fa fa-history"></i>历史发布</a></li>
+        <li><a href="#"><i class="fa fa-reply-all"></i>退出登录</a></li>
+        <li><a href="#" data-rel="close"><i class="fa fa-arrow-left"></i>返回</a></li>
+      </ul>
+    </div>
+
+    
+
+    <div data-role="content" role="main">
+      <div class="header_index clearfix">
+        <div class="index_link"><small>微友</small></div>
+        <div class="login_link"><a href="#"><small>登录</small></a><a  href="#panel"  data-icon="grid" class="menu_btn"><i class="fa fa-th-large"></i></a></div>
+      </div>
+      <p class="tece"><img src="images/logo.png"></p>
+
+
+      <form action="#" method="post">  
+        <div style="width:75%; float:left; padding-left:1%; margin-bottom:15px;" data-inline="true"> <input type="text" name="password"  value="" placeholder="搜索..."></div>
+        <div style="width:23%; float:right;padding-right:1%; margin-bottom:15px;" data-inline="true"><button data-theme="g" style="height:39px; margin-top:8px;"><i class="fa fa-search"></i></button></div>      
+      </form> 
+      <div class="clearfix"></div>
+      <p  class="tece bai"><small>互粉中心</small></p>
+      <fieldset class="ui-grid-a mingx">
+        <div class="ui-block-a pr"><div class="hot"></div><a href="明星大厅.html"><img src="images/03.jpg"></a></div>
+        <div class="ui-block-b pr"><div class="hot"></div><a href="微信群.html"><img src="images/01.jpg"></a></div>
+      </fieldset>
+      <p  class="tece bai"><small>为您推荐</small></p>
+     <fieldset class="ui-grid-b mingx">
+        <div class="ui-block-a"><a href="明星大厅.html"><img src="images/06.jpg"></a></div>
+        <div class="ui-block-b"><a href="微信群.html"><img src="images/05.jpg"></a></div>
+        <div class="ui-block-c"><a href="微信群.html"><img src="images/04.jpg"></a></div>
+      
+      </fieldset>
+    </div>
+   
+  </div>
+</body>
+</html>

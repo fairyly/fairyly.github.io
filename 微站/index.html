@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/jquery.mobile.flatui.css" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <script src="js/jquery.js"></script>
+  <script src="js/jquery.mobile-1.4.0-rc.1.js"></script>
+</head>
+<body>
+  <div data-role="page">
+
+    <div data-role="panel" id="panel" data-position="right" data-theme="a" data-display="push">
+      
+    </div>
+
+    <div data-role="header" data-theme="f" >
+      <a data-iconpos="notext" data-role="button" data-icon="home" title="Home">Home</a>
+      <h1>首页</h1>
+      <a data-iconpos="notext" href="#panel" data-role="button" data-icon="flat-menu"></a>
+    </div>
+
+    <div data-role="content" role="main">
+      <div><img src="images/fj.png" style="width:100%"></div>
+      <form action="#" method="post">  
+        <div style="width:75%; float:left" data-inline="true"> <input type="search" name="password" id="search" value="" placeholder="搜索..."></div>
+        <div style="width:23%; float:right" data-inline="true"><button data-theme="g" style="height:37px; margin-top:9px;">搜索</button></div>      
+      </form> 
+      <div class="clearfix"></div>
+      <fieldset class="ui-grid-a mingx">
+        <div class="ui-block-a"><a href="明星大厅.html"><img src="images/m1.png">微商明星</a></div>
+        <div class="ui-block-b"><a href="微信群.html"><img src="images/m2.png">微商群</a></div>
+      </fieldset>
+      <fieldset class="ui-grid-a mingx">
+        <div class="ui-block-a"><a href="#"><img src="images/m3.png">推广社区</a></div>
+        <div class="ui-block-b"><a href="#"><img src="images/m4.png">微商直播</a></div>
+      </fieldset>
+      <fieldset class="ui-grid-a mingx">
+        <div class="ui-block-a"><a href="#"><img src="images/m5.png">货源大厅</a></div>
+        <div class="ui-block-b"><a href="#"><img src="images/m6.png">帮助中心</a></div>
+      </fieldset>
+    </div>
+    <div data-role="footer" data-theme="f"><h3></h3></div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/jquery.mobile.flatui.css" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <link rel="stylesheet" type="text/css" href="font-awesome-4.3.0/css/font-awesome.css" />
+  <script src="js/jquery.js"></script>
+  <script src="js/jquery.mobile-1.4.0-rc.1.js"></script>
+</head>
+<body>
+  <div data-role="page">
+
+    <div data-role="panel" id="panel" data-position="right" data-theme="a" data-display="push">
+      
+    </div>
+
+    <div data-role="header" data-theme="f" >
+      <a  data-role="button" data-icon="arrow-l" data-rel="back" title="返回">返回</a>
+      <h1>微信群</h1>
+      <a data-iconpos="notext" href="#panel" data-role="button" data-icon="flat-menu"></a>
+    </div>
+    <div data-role="navbar" class="disnone">
+      <ul>
+        <li><a href="#" data-icon="clock" data-theme="g"  class="ui-btn-active ui-state-persist">日排行</a></li>
+        <li><a href="#" data-icon="calendar" data-theme="g">月排行</a></li>
+        <li><a href="#" data-icon="location" data-theme="g">地区排行</a></li>
+      </ul>
+     </div>
+    <div data-role="content" role="main">
+     
+      <ul data-role="listview" data-inset="true" data-theme="c">
+        <li><a href="详细页面1.html"><img src="images/w2.png"><p>进群必须加群主</p><p>红包语让你依稀还个够，进群不许加群主</p></a></li>
+       <li><a href="详细页面1.html"><img src="images/w2.png"><p>昵称：微信昵称</p><p>微信号：265485</p><p>地区：河南-郑州</p></a></li>
+      </ul>
+      <div data-role="popup" id="erweicode" data-theme="a">
+        <div style="padding:0px 20px;">
+            <h3 class="pm0 tece">长按二维码关注</h3>
+            <p class="tece pm0"><img src="images/code.png"></p>
+            <p class="pm0 tece clgreen1">微信号：123456789</p>
+           
+            <a href="#" data-role="button" data-rel="back" data-theme="g" data-transition="fade">确定</a>
+        </div>
+      </div>
+      <button data-theme="c">下一页</button>
+     <button data-icon="flat-new" data-theme="g">我要发布</button>
+    </div>
+    <div data-role="footer" data-theme="f"><h3></h3></div>
+  </div>
+
+</body>
+</html>
