@@ -1,0 +1,189 @@
+*{
+	margin:0px;
+	padding: 0px;
+}
+.header{
+	width: 100%;
+	height: 35px;
+	background-color: #fd6085;
+	color: #ffffff;
+}
+a{
+	text-decoration: none;
+}
+li{
+    list-style: none;
+}
+.nav li{
+    display: inline-block;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+}
+.nav a{
+	color: #ffffff;
+	font-size: 20px;
+	
+}
+.more{
+   width: 100%;
+   height: 40px;
+}
+.more div{
+	width:70%;
+	height: 40px;
+	margin:0px auto;
+	line-height:40px;
+	text-align: center;
+	background-color: #fd6085;
+	border-radius: 26px;
+	font-size: 14px;
+	color: #ffffff;
+	position:relative;
+	top: 445px;
+}
+/*首页结束*/
+.edit1{
+    width: 88%;
+    height: 80%;
+    margin: 0px auto;
+    background-color: #ffffff;
+    position: relative;
+    top: 0px;
+}
+.img1{
+	width: 100%;
+	height:300px;
+	/*overflow-y: hidden;
+	overflow-x: hidden;*/
+	overflow: scroll;
+	position: relative;
+}
+.m1{
+	position: absolute;
+	text-align: center;
+	left: 
+}
+.up1{
+	width: 100%;
+	height: 60px;
+	margin: 0px auto;
+	text-align: center;
+	position: relative;
+    top: 95px;
+    z-index: 500;
+}
+.bg1{
+	width: 100%;
+	height: 270px;
+	position: relative;
+	/*background-color: #ffffff;*/
+}
+.title1{
+	width: 77%;
+	height: 60px;
+	margin: -40px auto;
+	padding: 15px;
+	background-color:#fff100;
+	z-index: 99;
+	position: relative;
+	text-align: center;
+}
+.content1{
+	width: 100%;
+	margin: 40px auto;
+	text-align: center;
+}
+
+.img11{
+    margin:-40px;
+}
+.up2{
+	width: 100%;
+	height: 60px;
+	margin: 0px auto;
+	text-align: center;
+	z-index: 509;
+	position: relative;
+    top: -63px;
+}
+.shengcheng{
+   width: 100%;
+   height: 40px;
+   top: 52px;
+   position: relative;
+}
+.shengcheng div{
+	width:60%;
+	height: 40px;
+	margin:10px auto;
+	line-height:40px;
+	text-align: center;
+	background-color: #fd6085;
+	border-radius: 6px;
+	font-size: 14px;
+	color: #ffffff;
+	position:relative;
+	
+}
+/*第一页结束*/
+.edit2{
+    width: 100%;
+    height: 80%;
+    margin: 0px auto;
+    background-color: #ffffff;
+    position: relative;
+    top: 0px;
+}
+.img2{
+	width: 100%;
+	height: 450px;
+	position: relative;
+}
+.mm2{
+   position: absolute;
+   width: 100%;
+   text-align: center;
+   margin: 0px auto;
+}
+.img22{
+	width: 100%;
+	height: 130px;
+	position: absolute;
+	background-color: #ffffff;
+}
+.mm22{
+	width: 100%;
+	height: 80px;
+	margin: 10px auto;
+	text-align: center;
+	color: 
+}
+.shengcheng2{
+   width: 100%;
+   height: 40px;
+   top: 152px;
+   position: relative;
+}
+.shengcheng2 div{
+	width:60%;
+	height: 40px;
+	margin:10px auto;
+	line-height:40px;
+	text-align: center;
+	background-color: #fd6085;
+	border-radius: 6px;
+	font-size: 14px;
+	color: #ffffff;
+	position:relative;
+	
+}
+/*第二页结束*/
+.edit3{
+	width: 80%;
+	height: 80%;
+    margin: 0px auto;
+    background-color: #870c8d;
+    position: relative;
+    top: 0px;
+}

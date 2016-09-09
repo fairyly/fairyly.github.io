@@ -1,0 +1,103 @@
+input {
+    border: none;
+}
+.news_box {
+    padding: 5% 0;
+}
+.news_box>div {
+    width: 1100px;
+    margin: 0 auto;
+    min-height: 500px;
+    overflow: hidden;
+}
+
+input {
+    color: #fff;
+    background: #f95e4e;
+    width: 100%;
+    padding: 15px;
+}
+.search_btn {
+    position: absolute;
+    right: 20px;
+    top: 16px;
+    color: #fff;
+    font-size: 20px;
+}
+.search_btn:hover{
+    cursor: pointer;
+}
+.nav {
+    line-height: 60px;
+    text-align: center;
+    font-size: 16px;
+}
+.nav li:hover a{
+    background: #fff;
+    color: #f95e4e;
+}
+.nav li.active a {
+    background: #fff;
+    color: #f95e4e;
+}
+.nav a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s background;
+}
+.detail_list {
+    padding-left: 30px;
+    width: 850px;
+}
+.detail_list li {
+    border-bottom: 2px solid #f5f7f8;
+    padding: 20px 0;
+}
+.detail_list dt {
+    width: 100px;
+    height: 80px;
+    /*background: red;*/
+}
+.detail_list dd {
+    padding-left: 20px;
+    font-size: 13px;
+}
+.detail_list h4 {
+    font-size: 18px;
+    line-height: 30px;
+    max-width: 300px;
+    font-weight: bold;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    float: left;
+}
+.detail_list .con {
+    line-height: 25px;
+    width: 600px;
+}
+.detail_list h4 a:hover {
+    color: #f95e4e;
+}
+.detail_list time {
+    float: right;
+    line-height: 30px;
+}
+
+.news_box .left {
+    width: 250px;
+    position: relative;
+    margin-bottom: -99999px;
+    padding-bottom: 99999px;
+    background: #f5f7f8;
+}
+.news_box .right {
+    margin-bottom: -99999px;
+    padding-bottom: 99999px;
+}
+time {
+    color: #c5c5c5;
+    font-size: 12px;
+    float: right;
+}

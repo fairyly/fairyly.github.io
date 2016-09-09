@@ -1,0 +1,194 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="author" content="yhq" />
+<title>视频详情页</title>
+<link rel="stylesheet" type="text/css" href="css/index.css">
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript">
+        var docEl = document.documentElement,
+            resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+            recalc = function() {
+                //设置根字体大小
+                docEl.style.fontSize = 10 * (docEl.clientWidth / 320) + 'px';
+            };//绑定浏览器缩放与加载时间
+        window.addEventListener(resizeEvt, recalc, false);
+        document.addEventListener('DOMContentLoaded', recalc, false);
+    </script>
+</head>
+
+<body>
+	<header>
+		<div class="head">	
+		</div>
+	</header>
+	<section>
+		<div class="detail_conhead">
+			<a href="index.html">首页></a>视频详情
+		</div>
+		<div class="detail_contitle">
+			<h1>喜剧者联盟2016:郭麒麟抛弃响声能干啥</h1>
+			<p><span>2016-1-1</span><span>浏览量：111</span></p>
+		</div>
+		<div id="video" style="position:relative;z-index: 100;max-width:640px;max-heght:320px;height:14rem;margin:0px auto;width
+		:95%"><div id="a1"></div></div>
+		<div class="ads">
+			<div class="con">
+			<!-- 	<img src="images/gg.jpg"> -->
+          <div class="tanadgg">
+            <div class="adhead">
+              <img src="images/gg.jpg">
+            </div>
+            <p>这里添加文字信息</p>
+            <p style="font-size:12px;margin-bottom:2.5rem;">这里说明需求，欢迎致电联系123456789</p>
+            <button class="bt1">安卓</button>
+            <button class="bt2">IOS</button>
+          </div>
+				<p class="secondp"><span class="times" id="tim">10</span>秒后关闭</p>
+			</div>	
+		</div>
+    <!-- 打开时弹出 -->
+    <div class="openad">
+          <div class="openad_con">
+            <img src="images/gg.jpg">
+             <p class="miao">倒计时<span class="onetimes" id="onetim">10</span>秒</p>
+          </div>
+
+    </div>
+	</section>
+    <footer>
+    	<div class="foot">
+    		<ul>
+    			<li>
+    				<a href="index.html"><p></p><span>首页</span></a>
+    			</li><li><a href=""><p></p><span>合作</span></a></li><li><a href=""><p></p><span>友链</span></a></li>
+    		</ul>
+    	</div>
+    </footer>
+<script type="text/javascript" src="ckplayer/ckplayer.js" charset="utf-8"></script>
+<script type="text/javascript">
+	var flashvars={
+		f:'http://movie.ks.js.cn/flv/other/1_0.flv',
+		c:0,
+		b:1
+		};
+	var params={bgcolor:'#FFF',allowFullScreen:false,allowScriptAccess:'always'};
+	
+	CKobject.embedSWF('ckplayer/ckplayer.swf','a1','ckplayer_a1','100%','100%',flashvars,params);
+	/*
+	CKobject.embedSWF(播放器路径,容器id,播放器id/name,播放器宽,播放器高,flashvars的值,其它定义也可省略);
+	下面三行是调用html5播放器用到的
+	*/
+	var video=['http://movie.ks.js.cn/flv/other/1_0.mp4->video/mp4'];
+	var support=['iPad','iPhone','ios','android+false','msie10+false','webKit'];
+	CKobject.embedHTML5('video','ckplayer_a1','100%','100%',video,flashvars,support);
+  </script>
+  <script type="text/javascript">
+       $(function(){
+       	   var v=document.getElementById("ckplayer_a1");
+       	   v.setAttribute('controls','controls');
+       	   v.setAttribute('webkit-playsinline','true');
+           v.setAttribute('x-webkit-airplay','true');
+           v.setAttribute('webview.allowsInlineMediaPlayback','yes');
+           // 打开弹出广告
+            $("#video").hide();
+            var openadw='80%';
+            var openadh='80%';
+            $(".openad_con").width(openadw);
+            $(".openad_con").height(openadh);
+            var open=setInterval(jian,1000);
+            function jian(){
+              var opent=document.getElementById("onetim");
+              var one=parseInt(opent.innerHTML);
+              one--;
+              var biao=false;
+              $(".onetimes").text(one);
+              console.log(one);
+              if(one==1){
+                  clearInterval(open);
+                  if(biao==false){
+                  $(".openad").hide();
+                  $("#video").show();
+                }else{
+                  biao=true;
+                }
+              }
+            }
+           // v.setAttribute('autoplay','true');
+       	   // var current="10";
+       	   // var cut=parseInt($(".times").val());
+           //视频播放停止弹出倒计时
+       	   var t1=document.getElementById("tim");
+       	   var cut=parseInt(t1.innerHTML);
+           var adsTimeO;
+           var t;
+           var tag=false;
+            var set=setInterval(jishi,1000);
+            function jishi(){
+               	  if (v.paused==true&&tag) {
+                             adsTimeO=setInterval(tanad,1000);
+                             clearInterval(set);
+                              return false;
+            	 }else if(!v.paused){
+                          tag=true;
+            		    	$(".ads").hide();
+            		    	$("#video").show();
+            		    	// clearInterval(set);
+            	}
+            }
+         function tanad(){
+               $("#video").hide();
+               $(".ads").show();
+
+               $(".times").text(cut);
+               if(cut<=0){
+                   $(".ads").hide();
+                   $("#video").show();
+                   cut=10;
+                   clearInterval(adsTimeO);
+                   adsTimeO=null;
+                   hideAd()
+               }
+               cut=cut-1;
+               // clearInterval(sett);
+           }
+           $(".secondp").click(function(){
+             	hideAd();
+               clearInterval(adsTimeO);
+               adsTimeO=null;
+               return false;
+             });
+           function hideAd(){
+               cut=10;
+               tag=false;
+               $(".ads").hide();
+               $("#video").show();
+               set=setInterval(jishi,1000);
+               return false;
+           }
+       //    v.ontimeupdate = function(){    // 监听事件
+			//     var currentTime = Math.floor(v.currentTime);    // 取得当前播放的时间，由于 currentTime 返回的是个浮点数，所以要向下取整
+			//     if (currentTime == 10) {    // 播放到60秒
+			//         v.setAttribute('controls','controls');
+			//         alert('10s');
+			//         console.log(v);
+			//         v.pause();
+			//         $(".ads").show(100);
+			//     };
+			//     if (v.paused) {
+			//     	$(".ads").show(100);
+			//     }else{
+			//     	$(".ads").hide();
+			//     }
+			// }手机端有不弹出问题
+       });
+  </script>
+</body>
+</html>

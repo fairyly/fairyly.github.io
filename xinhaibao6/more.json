@@ -1,0 +1,36 @@
+{
+    "lists":[
+        {
+            "pic":"images/11.jpg",
+             "link":"index_1.html"
+        },
+        {
+            "pic":"images/22.jpg",
+            "link":"index_2.html"
+        },
+        {
+            "pic":"images/33.jpg",
+            "link":"index_3.html"
+        },
+        {
+            "pic":"images/4.jpg",
+            "link":"index_4.html" 
+        },
+         {
+            "pic":"images/11.jpg",
+             "link":"index_1.html"
+        },
+        {
+            "pic":"images/22.jpg",
+            "link":"index_2.html"
+        },
+        {
+            "pic":"images/33.jpg",
+            "link":"index_3.html"
+        },
+        {
+            "pic":"images/4.jpg",
+            "link":"index_4.html" 
+        }
+    ]
+}

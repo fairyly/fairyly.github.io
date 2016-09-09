@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>海报首页</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-title" content="海报首页">
+    <link rel="stylesheet" type="text/css" href="css/addswiper.css">
+    <script src="js/jquery-2.2.3.min.js"></script>
+    <!-- <script src="js/zepto.min.js"></script> -->
+    <script src="js/edit_1.js"></script>
+   <script type="text/javascript">
+        var docEl = document.documentElement,
+            //总来的来就是监听当然窗口的变化，一旦有变化就需要重新设置根字体的值
+            resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+            recalc = function() {
+                //设置根字体大小
+                docEl.style.fontSize = 10 * (docEl.clientWidth / 320) + 'px';
+            };
+        //绑定浏览器缩放与加载时间
+        window.addEventListener(resizeEvt, recalc, false);
+        document.addEventListener('DOMContentLoaded', recalc, false);
+    </script>
+    <script type="text/javascript">
+    //图片等比例缩小处理
+    function AutoResizeImage(maxWidth,maxHeight,objImg){
+            var img = new Image();
+            img.src = objImg.src;
+            var hRatio;
+            var wRatio;
+            var Ratio = 1;
+            var w = img.width;
+            var h = img.height;
+            wRatio = maxWidth / w;
+            hRatio = maxHeight / h;
+            if (maxWidth ==0 && maxHeight==0){
+                Ratio = 1;
+                }
+                else if (maxWidth==0){//
+                    if (hRatio<1) Ratio = hRatio;
+                       }else if (maxHeight==0){
+                             if (wRatio<1) Ratio = wRatio;
+                             }else if (wRatio<1 || hRatio<1){
+                                   Ratio = (wRatio<=hRatio?wRatio:hRatio);
+                                    }
+            if (Ratio<1){
+                w = w * Ratio;
+                h = h * Ratio;
+                }
+            objImg.height = h;
+            objImg.width = w;
+    }
+    </script>
+</head>
+<body>
+    <div class="header">
+        <nav>
+            <div class="nav">
+                <ul>
+                    <li style="width:28%"><a href="index.html">返回</a></li>
+                    <li style="width:45%"><a href="#">微商海报</a></li>
+                    <li style="width:22%"><a href="index.html">首页</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="editmore">
+        <div class="muban">
+            <div class="muban1" style="float:left; margin-bottom: 50px;">
+                <a href="index_1.html"><img src="images/1.jpg"/></a><a href="index_2.html"><img src="images/2.jpg"/></a><a href="index_3.html"><img src="images/3.jpg"/></a><!-- <a href=""><img src="images/1.jpg" style="width:50%;height:250px"/></a><a href=""><img src="images/2.jpg" style="width:50%;height:250px"/></a><a href=""><img src="images/3.jpg" style="width:50%;height:250px"/></a> -->
+            </div>
+        </div>
+        <div class="bottomnav">
+          <ul><li><a href="#"><img src="images/icon1.png"><p>名片</p></a></li><li><a href="#"><img src="images/icon2.png"><p>展示</p></a></li><li><a href="#"><img src="images/icon3.png"><p>对比</p></a></li><li><a href="#"><img src="images/icon4.png"><p>详情</p></a></li><li><a href="#"><img src="images/icon5.png"><p>活动</p></a></li></ul>
+        </div>
+    </div>
+     <!-- 更多模板页面结束 -->
+</body>
+</html>
+

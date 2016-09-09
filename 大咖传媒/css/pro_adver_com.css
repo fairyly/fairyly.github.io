@@ -1,0 +1,210 @@
+.product_list {
+    padding: 5% 9% 5% 9%;
+}
+.product_list li {
+    width: 25%;
+    height: 150px;
+    float: left;
+    text-align: center;
+    line-height: 70px;
+    font-size: 18px;
+}
+.product_list p.active {
+    color: #333;
+}
+.product_list li p {
+    color: #b42b2b;
+}
+.product_list img {
+    width: 45%;
+    display: none;
+}
+.product_list img.active {
+    display: inline-block;
+}
+.product_list img:hover {
+    transition:All 0.4s ease-in-out;
+    -webkit-transition:All 0.4s ease-in-out;
+    -moz-transition:All 0.4s ease-in-out;
+    -o-transition:All 0.4s ease-in-out;
+    transform:rotate(360deg) scale(1.2);
+    -webkit-transform:rotate(360deg) scale(1.2);
+    -moz-transform:rotate(360deg) scale(1.2);
+    -o-transform:rotate(360deg) scale(1.2);
+    -ms-transform:rotate(360deg) scale(1.2);
+}
+.product_list_con>section {
+    display: none;
+}
+.product_list_con>section.active {
+    display: block;
+}
+.product_list_con {
+    padding-bottom: 2%;
+}
+.solution_con div {
+    width: 150px;
+    height: 130px;
+    background: url(../images/solution_icon.png) no-repeat;
+}
+.solution_con p {
+    width: 480px;
+    font-size: 16px;
+    line-height: 30px;
+}
+.solution_con li {
+    margin: 40px 0;
+}
+.cooperation_con>div {
+    background: #f2f0f1;
+    text-align: center;
+    padding: 3% 0;
+    margin-bottom: 3%
+}
+.cooperation_con li {
+    float: left;
+    margin: 2%;
+    width: 16%;
+}
+.cooperation_con li>div {
+    width: 80px;
+    height: 100px;
+    margin: 0 auto;
+}
+.cooperation_con {
+    padding: 0 8%;
+}
+.cooperation_con ul {
+    padding: 0 6%;
+}
+.cooperation_con h3 {
+    font-size: 28px;
+    line-height: 50px;
+}
+.show_con div {
+    width: 110px;
+    height: 194px;
+}
+.show_con p {
+    width: 420px;
+    font-size: 16px;
+    line-height: 30px;
+}
+.show_con li {
+    margin: 40px 0;
+}
+.show_con h4 {
+    font-size: 18px;
+    color: #7aa6ff;
+}
+
+.interaction_con div {
+    width: 132px;
+    height: 100px;
+    background: url(../images/interaction_icon.png) no-repeat;
+    margin: 0 auto;
+}
+.interaction_con {
+    width: 85%;
+    margin: 0 auto;
+}
+.interaction_con ul {
+}
+.interaction_con li {
+    width: 25%;
+    background-color: #f5f5f5;
+    margin: 2% 4%;
+    padding: 2% 0;
+    transition: 0.2s background-color;
+}
+.interaction_con p {
+    text-align: center;
+    font-size: 26px;
+    line-height: 30px;
+    color: #8c9090;
+    padding-top: 6%;
+}
+.interaction_con li:hover p {
+    color: #fff;
+}
+.interaction_con li:nth-child(1):hover {
+    background: #3da5e1;
+}
+.interaction_con li:nth-child(2):hover {
+    background: #b52323;
+}
+.interaction_con li:nth-child(3):hover {
+    background: #78b91a;
+}
+.interaction_con li:nth-child(4):hover {
+    background: #ea4343;
+}
+.interaction_con li:nth-child(5):hover {
+    background: #b453d8;
+}
+.interaction_con li:nth-child(6):hover {
+    background: #de389d;
+}
+.interaction_con li:nth-child(7):hover {
+    background: #fc9542;
+}
+.interaction_con li:nth-child(8):hover {
+    background: #f5dc0a;
+}
+.interaction_con li:nth-child(9):hover {
+    background: #2ad8bd;
+}
+.interaction_con li:nth-child(1):hover div {
+    background-position: -1056px -118px;
+}
+.interaction_con li:nth-child(2):hover div {
+    background-position: -530px -118px;
+}
+.interaction_con li:nth-child(3):hover div {
+    background-position: -785px -118px;
+}
+.interaction_con li:nth-child(4):hover div {
+    background-position: -131px -118px;
+}
+.interaction_con li:nth-child(5):hover div {
+    background-position: -655px -118px;
+}
+.interaction_con li:nth-child(6):hover div {
+    background-position: -925px -118px;
+}
+.interaction_con li:nth-child(7):hover div {
+    background-position: -263px -118px;
+}
+.interaction_con li:nth-child(8):hover div {
+    background-position: 0 -118px;
+}
+.interaction_con li:nth-child(9):hover div {
+    background-position: -408px -118px;
+}
+.interaction_con li:nth-child(1) div {
+    background-position: -1056px 0;
+}
+.interaction_con li:nth-child(2) div {
+    background-position: -530px 0;
+}
+.interaction_con li:nth-child(3) div {
+    background-position: -785px 0;
+}
+.interaction_con li:nth-child(4) div {
+    background-position: -131px 0;
+}
+.interaction_con li:nth-child(5) div {
+    background-position: -655px 0;
+}
+.interaction_con li:nth-child(6) div {
+    background-position: -925px 0;
+}
+.interaction_con li:nth-child(7) div {
+    background-position: -263px 0;
+}
+.interaction_con li:nth-child(8) div {
+    background-position: 0 0;
+}
+.interaction_con li:nth-child(9) div {
+    background-position: -408px 0;
+}

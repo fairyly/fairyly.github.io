@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jquery+html5全套大气商务电子企业模板源码</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <link rel="stylesheet" href="css/common.css">
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <link rel="stylesheet" href="css/swiper-3.2.7.min.css">
+    <!--[if lt IE 9]>
+    <script src="/static/common/js/html5.min.js"></script>
+    <![endif]-->
+    <script src="js/common.js"></script>
+	<link rel="stylesheet" href="css/pro_adver_com.css">
+	<link rel="stylesheet" href="css/product.css">
+	<link rel="stylesheet" href="css/lunbo.css">
+	<script src="js/lunbo.js"></script>
+</head>
+<body style="overflow:-Scroll;overflow-x:hidden">
+
+<header class="clearFix">
+    <div>
+        <h1 class="pull-left" data-scroll-reveal="enter left over 1s and move 300px after 0.5s">
+            <a style="display: block; width: 100%; height: 100%;" href="http://www.17sucai.com/pins/demoshow/16298">大咖传媒</a>
+        </h1>
+        <div id="nav" class="pull-right" data-scroll-reveal="enter top over 1s and move 300px after 0.5s">
+            <ul class="clearFix">
+                <li><a href="index.html" class=" current ">首页</a></li>
+                <li><a href="introduce.html" class="">关于大咖</a></li>
+                <li><a href="dsp.html" class="">产品介绍</a></li>
+                <li><a href="guanggao.html" class="">广告主</a></li>
+                <li><a href="notice.html" class="">新闻动态</a></li>
+                <li><a href="help.html" class="">帮助中心</a></li>
+                <li><a href="http://www.17sucai.com/pins/demoshow/16298" target="_blank">DSP登陆</a></li>
+            </ul>
+            <div class="nav-current"></div>
+        </div>
+    </div>
+</header>
+<div class="banner" data-scroll-reveal="enter right over 1s and move 300px after 0.8s">
+    <div id="slide-holder">
+		<div id="slide-runner">
+			<a href="http://www.17sucai.com/pins/16298.html" target="_blank"><img id="slide-img-1" src="images/group.png" class="slide" alt="" /></a>
+			<a href="http://www.17sucai.com/pins/16298.html" target="_blank"><img id="slide-img-2" src="images/banner.png" class="slide" alt="" /></a>
+			<a href="http://www.17sucai.com/pins/16298.html" target="_blank"><img id="slide-img-3" src="images/advertisers.png" class="slide" alt="" /></a>
+			<a href="http://www.17sucai.com/pins/16298.html" target="_blank"><img id="slide-img-4" src="images/news.png" class="slide" alt="" /></a>
+			<a href="http://www.17sucai.com/pins/16298.html" target="_blank"><img id="slide-img-5" src="images/help.png" class="slide" alt="" /></a>
+			<div id="slide-controls">
+            <p id="slide-client" class="text"><strong></strong><span></span></p>
+            <p id="slide-desc" class="text"></p>
+            <p id="slide-nav"></p>
+			</div>
+		</div>
+    </div>
+</div>
+<script type="text/javascript">
+if(!window.slider) {
+    var slider={};
+}
+
+slider.data= [
+{
+    "id":"slide-img-1", // 与slide-runner中的img标签id对应
+    "client":"标题1",
+    "desc":"生活就像一坨屎 越吃越香" //这里修改描述
+},
+{
+    "id":"slide-img-2",
+    "client":"标题2",
+    "desc":"爱简单，简单爱"
+},
+{
+    "id":"slide-img-3",
+    "client":"标题3",
+    "desc":"世界那么大，想去看看"
+},
+{
+    "id":"slide-img-4",
+    "client":"标题4",
+    "desc":"像是黑暗中突如其来的一束光"
+},
+{
+    "id":"slide-img-5",
+    "client":"标题5",
+    "desc":"珍惜現在 展望未來 過去的美好只需回味"
+}
+];
+</script>
+<section class="product_list">
+    <ul class="clearFix">
+        <li data-scroll-reveal="enter bottom after 0.5s">
+            <img src="images/dsp.png" alt="dsp">
+            <img class="active"src="images/dsp1.png" alt="dsp">
+            <p class="active">大咖DSP</p>
+        </li>
+        <li data-scroll-reveal="enter bottom after 1.5s">
+            <img class="active" src="images/dmp.png" alt="dmp">
+            <img src="images/dmp1.png" alt="dmp">
+            <p>大咖DMP</p>
+
+        </li>
+        <li data-scroll-reveal="enter bottom after 2s">
+            <img class="active" src="images/adx.png" alt="adx">
+            <img src="images/adx1.png" alt="adx">
+            <p>大咖ADExchange</p>
+        </li>
+        <li data-scroll-reveal="enter bottom after 2.5s">
+            <img class="active" src="images/ssp.png" alt="ssp">
+            <img src="images/ssp1.png" alt="ssp">
+            <p>大咖SSP</p>
+        </li>
+    </ul>
+</section>
+<div class="product_list_con">
+    <section class="active" data-scroll-reveal="enter left after 0.5s">
+        <section class="intro">
+            <h2>大咖DSP</h2>
+            <div>
+                <p>
+                    国内首家支持oCPM（按效果优化，按CPM计费）的需求方平台，帮助广告主通过基于数据的人群定向技术，实时竞价获得广告曝光机会，将广告投放到目标受众。
+                </p>
+                <p>
+                    大咖DSP，完全自主研发，强大的竞价算法、效果转化算法、版本优化算法，大幅提升广告效率，助力广告主提升ROI。
+                </p>
+                <p>
+                    精准，以DMP为底层支撑，基于受众，更精确用户画像，更精准找到目标消费者。
+                </p>
+                <p>
+                    炫酷广告创意，多种广告形式，最大化满足广告主不同需求。
+                </p>
+            </div>
+        </section>
+        <section class="use_link" data-scroll-reveal="enter bottom after 1.5s">
+            <a href="http://www.17sucai.com/pins/demoshow/16298" target="_blank" class="btn">欢迎下载</a>
+        </section>
+    </section>
+    <section>
+        <section class="intro">
+            <h2>大咖DMP</h2>
+            <div>
+                <p>
+                    整合硬核联盟（成员：金立、vivo、oppo、酷派、联想、华为）以及其他第三方的数据，深度建模和人群细分，建立自动化人群策略，提供全面深入的数据洞察和智能管理，指导广告主进行强有力的广告优化和投放决策。
+                </p>
+                <p>
+                    兴趣爱好、地理位置、职业等海量用户标签自定义组合，多维度分析目标受众，快速筛选目标人群，实现精准营销。
+                </p>
+            </div>
+
+        </section>
+        <section class="use_link">
+        </section>
+    </section>
+    <section>
+        <section class="intro">
+            <h2>大咖ADExchange</h2>
+            <div>
+                <p>
+                    大咖广告交易市场，聚合硬核联盟各手机厂商的海量的移动流量资源，旨在帮助广告代理机构和广告主，采用DSP通过实时竞价的方式简便快捷的购买众多移动应用的广告优质资源，包括但不限于锁屏、天气、音乐、影视等应用。
+                </p>
+                <p>
+                    大咖广告交易市场，完美连接大咖DSP与SSP，聚合大量优质流量资源，广泛覆盖各类受众，一站式服务广告商。
+                </p>
+                <p>
+                    大咖广告交易市场，RTB程序化购买方式，多维度数据支持，动态优化算法，为效果用户提供完美解决方案。
+                </p>
+            </div>
+
+        </section>
+        <section class="use_link">
+        </section>
+    </section>
+    <section>
+        <section class="intro">
+            <h2>大咖SSP</h2>
+            <div>
+                <p>
+                    大咖供应方平台，专注于广告位管理、多渠道变现与收益优化，管理媒体广告位库存更专业、更智能，通过技术方式帮助媒体实现整体收益最大化。
+                </p>
+                <p>
+                    大咖SSP专注于服务移动APP流量，兼容多种创意类型，为移动开发者提供专业的广告管理工具和服务。
+                </p>
+                <p>
+                    高变现，高填充，汇聚全网海量广告主资源，实现了每一个流量的充分竞价，全面提升媒体的高填充率。
+                </p>
+                <p>
+                    先进的收入优化算法，简单易用的管理界面，实时数据报表，为您呈现请求、展示、点击、填充率等更有效的数据报告和收入分析。
+                </p>
+            </div>
+
+        </section>
+        <section class="use_link">
+        </section>
+    </section>
+</div>
+<footer id="footer">
+    <div class="clearFix" style="padding: 4% 5% 1% 5%; height:90%;">
+        <div class="pull-left" style="width: 70%" data-scroll-reveal="enter left after 0.5s">
+            <ul class="clearFix">
+                <li class="pull-left">
+                    <dl>
+                        <dt>广告主</dt>
+                        <dd><a href="http://www.17sucai.com/pins/demoshow/16298">解决方案</a></dd>
+                        <dd><a href="http://www.17sucai.com/pins/demoshow/16298">展现形式</a></dd>
+                        <dd><a href="http://www.17sucai.com/pins/demoshow/16298">广告互动</a></dd>
+                        <dd><a href="http://www.17sucai.com/pins/demoshow/16298">合作伙伴</a></dd>
+                    </dl>
+                </li>
+                <li class="pull-left">
+                    <dl>
+                        <dt>产品介绍</dt>
+                        <dd><a href="http://www.17sucai.com/pins/demoshow/16298">大咖交易平台</a></dd>
+                        <dd><a href="http://www.17sucai.com/pins/demoshow/16298">大咖DSP</a></dd>
+                        <dd><a href="http://www.17sucai.com/pins/demoshow/16298">大咖SSP</a></dd>
+                        <dd><a href="http://www.17sucai.com/pins/demoshow/16298">大咖DMP</a></dd>
+                    </dl>
+                </li>
+                <li class="pull-left">
+                    <dl>
+                        <dt>新闻中心</dt>
+                        <dd><a href="http://www.17sucai.com/pins/demoshow/16298">大咖公告</a></dd>
+                        <dd><a href="http://www.17sucai.com/pins/demoshow/16298">产品动态</a></dd>
+                        <dd><a href="http://www.17sucai.com/pins/demoshow/16298">媒体报道</a></dd>
+                        <dd><a href="http://www.17sucai.com/pins/demoshow/16298">最新活动</a></dd>
+                    </dl>
+                </li>
+                <li class="pull-left">
+                    <dl>
+                        <dt>关于我们</dt>
+                        <dd><a href="http://www.17sucai.com/pins/demoshow/16298">大咖传媒</a></dd>
+                        <dd><a href="http://www.17sucai.com/pins/demoshow/16298">加入我们</a></dd>
+                    </dl>
+                </li>
+            </ul>
+        </div>
+        <div class="pull-right clearFix code_img" style="width: 30%;" data-scroll-reveal="enter right after 0.5s">
+            <div class="pull-left">
+                <img src="images/weixin_code.png">
+                <p>大咖官方微信</p>
+            </div>
+            <div class="pull-right">
+                <img src="images/weibo_code.png">
+                <p>大咖官方微博</p>
+            </div>
+        </div>
+    </div>
+    <p id="record" style="text-align: center; line-height: 25px; background: #282828; font-size: 14px; height:25px;width: 100%;">@小pi酱 京ICP备14038000号  京公网安备11010502027357</p>
+</footer>
+<!--Animation-->
+<script src="js/scrollReveal.js"></script>
+<script>
+(function(){
+    window.scrollReveal = new scrollReveal({ reset: true, move: '50px'});
+})();
+</script>
+</body>
+</html>

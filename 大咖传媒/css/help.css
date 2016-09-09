@@ -1,0 +1,21 @@
+h3 {
+    font-size: 17px;
+}
+.detail_list {
+    padding-left: 120px;
+    width: 850px;
+}
+.con h4 {
+    font-size: 15px;
+    line-height: 30px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    float: left;
+    max-width: 100%;
+    width:100%;
+}
+.detail_list .con {
+    line-height: 25px;
+    width: 100%;
+}

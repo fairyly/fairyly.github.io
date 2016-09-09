@@ -1,0 +1,20 @@
+{
+    "lists":[
+        {
+            "pic":"images/8.jpg",
+             "link":"index_8.html"
+        },
+        {
+            "pic":"images/9.jpg",
+            "link":"index_9.html"
+        },
+        {
+            "pic":"images/11.jpg",
+            "link":"index_11.html"
+        },
+        {
+            "pic":"images/12.jpg",
+            "link":"index_12.html" 
+        }
+    ]
+}
