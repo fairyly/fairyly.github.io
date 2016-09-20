@@ -1,0 +1,33 @@
+﻿ body {background-color: #e8e8e8; padding: 0; margin: 0;}
+ ol,ul,li {padding-left: 0em;list-style: none}
+ h2,h3,h4,ul,li,p {padding: 0;margin: 0;}
+ input {outline: none;}
+ html{ padding: 0; margin: 0;}
+ html,body{ height:100%}
+.tb-header{ background: #FE5400; position: relative;}
+.header-serach{ position:absolute; left: 12%; width: 85%;}
+.am-slider-default{ margin: 0;}
+.header-serach input{ border: 0; background: rgba(0,0,0,0.5); border-radius: 5px;  width: 100%; line-height: 30px; font-size: 0.5rem; text-align: center;}
+.header-serach .am-icon-search{ color: #999; position: absolute; top: 2px; left: 30%; font-style: normal; font-size:1rem;}
+.am-slider-default .am-control-nav{ bottom: 10px;}
+.am-slider-default .am-control-nav li a.am-active{ background: #FE5400;}
+.tb-nav ul{ overflow: hidden;}
+.tb-nav{ overflow: hidden; background: #fff; padding: 1rem 0 1rem 0;}
+.tb-nav p{ color: #666666; font-size: 1.4rem;}
+.tb-nav li{ width: 25%; float: left; text-align: center;}
+.tb-nav li a{ color: #000;}
+.tb-nav .am-gallery-item img {width: 60%; display: block; margin: 5px auto;}
+.tb-list{padding: 0 1rem; border-top: 1px solid #c8c8c8; overflow: hidden; background: #fff;}
+.tb-list span{ height: 30px; line-height: 30px; border-right:1px solid #c8c8c8 ; float: left; width: 25%; color: red; font-weight: 900;}
+#divgundong{width: 75%; text-indent: 5px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-style: normal; line-height: 30px; height: 30px; float: left;}
+#divgundong a{ color: #333; font-size: 1.2rem;}
+#divgundong p{ overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+.am-gallery-bordered>li, .am-gallery-default>li, .am-gallery-imgbordered>li, .am-gallery-overlay>li{ padding: 0;}
+.am-gallery{ padding: 0;}
+.title{ margin-top: 1rem; background: #fff; color: #fe5400; font-weight: normal; text-indent: 1rem; font-size: 1.5rem; line-height: 40px; border-bottom: 1px solid #ddd;}
+.text img{ width: 100%;}
+.product .am-gallery-desc{ color: red;}
+.sq-foot{background: #eee; color: #a4a4a4;overflow: hidden; border-top: 1px solid #ddd;}
+.am-navbar-default .am-navbar-nav{background: #eee;}
+.sq-foot a{color: #a4a4a4;}
+.am-navbar-nav .curr {  color: #FE5400;}
