@@ -1,0 +1,223 @@
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}
+body{line-height:1}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+ ul li{list-style:none;}
+blockquote,q{quotes:none}
+blockquote:before,blockquote:after,q:before,q:after{content:none}
+a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent}
+ins{background-color:#ff9;color:#000;text-decoration:none}
+mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}
+del{text-decoration:line-through}
+abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}
+table{border-collapse:collapse;border-spacing:0}
+hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}
+input,select{vertical-align:middle}
+.container{
+	
+	background-color: #fff;
+}
+.head-top{
+	height: 30px;
+	line-height: 30px;
+	border-bottom:1px solid #ccc; 
+}
+.head-top ul{text-align: right;
+ margin-right: 50px;}
+.head-top ul li{
+	background: url(../images/arrow.jpg) no-repeat left center;
+	display: inline-block;
+   font-size: 10px;
+  
+}
+.head-top ul li a{text-decoration: none;
+	padding-left: 10px;
+color: #ccc;}
+.head-logo{
+	height: 80px;
+	width: 100%;
+}
+.head-logo .logo-left{
+	display: inline-block;
+	vertical-align: middle;
+}
+.head-logo .logo-right{
+	display: inline-block;
+	vertical-align: middle;
+    float: right;
+    width: 300px;
+    margin-top: 40px;
+	margin-right: 20px;
+	font-size: 10px;
+	color: #ccc;
+}
+.head-logo .logo-right p,.head-logo .logo-right img{
+	display: inline-block;
+	vertical-align: middle;
+}
+.head-logo .logo-right p span{
+	font-size: 25px;
+	color: red;
+}
+.head-bottom{width: 100%;
+	border-radius: 5px;
+background: url(../images/nav_bg.jpg);}
+.head-bottom ul{
+	height: 40px;
+	line-height: 40px;
+}
+.head-bottom li{
+	display: inline-block;
+	margin-right: 30px;
+	padding-left: 30px;
+}
+.head-bottom ul li a{
+	text-decoration: none;
+	font-size: 16px;
+	color: #fff;
+	font-weight: bold;
+}
+.head-bottom ul li a:hover{
+	color: yellow;
+}
+
+.nav-right{
+	padding-left: 100px;
+
+}
+.nav-right input{
+	width: 190px;
+	height: 25px;
+	background:url(../images/search.jpg) no-repeat right center;
+	background-color: #fff;
+	border: 1px solid #fff;
+    
+}
+.nav-left,.nav-right{
+	display: inline-block;
+	vertical-align: middle ;
+}
+.content{margin:0px auto;
+padding:0px auto;}
+.ad{
+    width: 1366px;
+	height: 310px;
+	overflow: hidden;
+}
+.main{
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+.main-left,.main-middle,.main-right{
+	display: inline-block;
+	vertical-align: top;
+	border: 1px solid #ccc;
+	width: 30%;
+	height: 260px;
+	margin:0;
+	padding:0;
+}
+.main-middle{
+	width: 45%;
+	margin-left: 10px;
+	margin-right: 10px;
+	padding:0;
+}
+.main-right{
+	width: 23%;
+	margin:0;
+	padding:0;
+}
+.left-title{
+	border: 1px solid #ccc;
+	margin-top: 3px;
+	color: gray;
+	line-height: 30px;
+	height: 30px;
+}
+.left-title p{
+	padding-left: 15px;
+	font-size: 12px;
+	font-weight: bold;
+}
+.more{
+	font-size: 10px;
+	float: right;
+	padding-right: 10px;
+}
+.more a{
+	text-decoration: none;
+	color: #ccc;
+}
+.news-pic,.news-con{
+	display: inline-block;
+	vertical-align: middle;
+	margin: 10px 3px;
+}
+.news-con li{
+	list-style: none;
+	line-height: 20px;
+	font-size: 10px;
+}
+.news-con li a{
+	text-decoration: none;
+	color: red;
+	font-size: 10px;
+}
+.news-con li span{
+	font-weight: bold;
+}
+.news-bottom ul{
+	margin-left: 5px;
+}
+.news-bottom li{
+	border-bottom: 1px dotted #ccc;
+	background: url(../images/list.jpg) no-repeat left center;
+	font-size: 10px;
+	padding-bottom: 2px;
+	line-height: 20px;
+	height: 20px;
+}
+.news-bottom li a{
+	text-decoration: none;
+	color: #000;
+	margin-left: 5px;
+}
+.news-bottom li span{
+	color: #ccc;
+	margin-left: 105px;
+}
+.css-pic,.css-con{
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 5px;
+	margin-top: 10px;
+}
+.css-con ul li{
+	list-style: none;
+	width: 300px;
+	line-height: 20px;
+	height: 20px;
+	font-size: 10px;
+}
+.css-con ul li a{
+	text-decoration: none;
+	color: red;
+	font-size: 10px;
+	font-weight: bold;
+}
+.css-b{	line-height: 40px;
+   height: 40px;
+}
+.css-b ul {
+	 padding: 50px;
+
+}
+.css-b ul li{
+   display: inline-block;
+   vertical-align: top;
+   font-size: 12px;
+}
+.app{
+	text-align:center;
+}
