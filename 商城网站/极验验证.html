@@ -1,0 +1,311 @@
+<!doctype html>
+<html><head>
+<meta charset="UTF-8">
+<title>极验验证移动端体验</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="keywords" content="极验验证, geetest, 行为式验证, 验证, 验证码, 拖动验证, 滑动验证, 验证安全, 验证广告, 网站 赚钱, 网站安全">
+<link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+<style>
+* {
+box-sizing: border-box;
+}
+body {
+text-align: center;
+padding-bottom: 40px;
+margin: 0;
+font-family: "Microsoft YaHei", sans-serif;
+}
+.show {
+display: block;
+}
+.hide {
+display: none;
+}
+.logo {
+height: 85px;
+background: url("images/mobile/logo.svg") no-repeat center center;
+background-size: auto 45px;
+}
+.desc {
+background-image: url("images/mobile/mobile.png");
+background-repeat: no-repeat;
+}
+.green {
+color: #31B567;
+}
+.bg-cyan {
+background-color:#72C47C ;
+border-radius: 2px;
+}
+.try{
+text-decoration: none;
+color:white;
+margin: 15px auto;
+height: 40px;
+width: 260px;
+overflow: hidden;
+display: inline-block;
+}
+.font-28 {
+font-size: 28px;
+}
+.font-15 {
+font-size: 15px;
+}
+.font-14 {
+font-size: 14px;
+}
+.font-16 {
+font-size: 16px;
+}
+.btn {
+line-height: 40px;
+cursor: pointer;
+-webkit-user-select: none;
+color: white;
+outline: none;
+}
+.fields {
+margin-bottom: 30px;
+}
+.fields>div
+{
+margin: 15px auto;
+height: 40px;
+width: 260px;
+overflow: hidden;
+}
+.fields>.user,
+.fields>.password {
+border: 1px solid #BBBBBB;
+padding: 5px 0 5px 35px;
+background-repeat: no-repeat;
+background-position: 9px 50%;
+background-size: auto 20px;
+text-align: left;
+}
+.user {
+background-image: url("images/mobile/user.png");
+}
+.password {
+background-image: url("images/mobile/password.png");
+}
+.fields input {
+outline: none;
+border: 1px solid #BBBBBB;
+border-width: 0 0 0 1px;
+border-radius: 0;
+padding-left: 10px;
+text-align: left;
+font-family: Consolas monospace;
+font-size: 16px;
+height: 29px;
+background-color: #FFFFFF;
+}
+.title {
+margin-bottom: 40px;
+}
+.title>h1 {
+margin: 0;
+}
+.title>p {
+margin: 5px 0 0 0;
+}
+.desc {
+margin: 0 auto;
+padding-left: 120px;
+padding-bottom: 10px;
+background-image: url("images/mobile/mobile.png");
+background-position: 0 4px;
+background-size: 100px 45px;
+width: 260px;
+}
+#pop {
+position: fixed;
+left: 0;
+top: 0;
+width: 100%;
+height: 100%;
+background-color: rgba(0,0,0,0.5);
+text-align: center;
+overflow: auto;
+}
+.gt_mobile_holder {
+margin-top: 100px;
+display: inline-block;
+}
+.success {
+margin: 0 auto;
+background-image: url("images/mobile/success.png");
+background-size: 160px;
+width: 160px;
+height: 160px;
+margin-bottom: 30px;
+}
+#success>h2 {
+margin-bottom: 0;
+}
+#success>p {
+margin-top: 5px;
+}
+</style>
+<script src="http://api.geetest.com/get.php?callback=geetest_1457437717916"></script><script charset="UTF-8" src="http://api.geetest.com/get.php?gt=ad872a4e1a51888967bdb7cb45589605&amp;challenge=5dcb91cc1b1ee72d8b48337872351f77&amp;product=embed&amp;width=301px&amp;offline=false&amp;callback=geetest_1457437720716"></script><script charset="UTF-8" src="http://static.geetest.com/static/js/svg.5.3.6.js"></script><script charset="UTF-8" src="http://static.geetest.com/static/simple/skin.5.2.6.js"></script><script charset="UTF-8" src="http://api.geetest.com/refresh.php?challenge=5dcb91cc1b1ee72d8b48337872351f7776&amp;gt=ad872a4e1a51888967bdb7cb45589605&amp;callback=geetest_1457438262762"></script></head>
+<body>
+<div class="logo"></div>
+<div id="taste" class="show">
+<div class="title">
+<h1 class="green font-28">极验验证移动端体验</h1>
+<p class="font-16">直接点击登陆按钮进行验证</p>
+</div>
+<div class="fields">
+<div class="user">
+<input disabled="disabled" type="text" value="hello@geetest.com">
+</div>
+<div class="password">
+<input disabled="disabled" type="password" value="888888">
+</div>
+<div id="login" class="btn font-15 bg-cyan">登录</div>
+</div>
+<div class="desc font-14">根据移动端的使用场景使用弹出式的验证方式给用户带来更好的体验</div>
+</div>
+<div id="pop" class="hide"><div id="geetest_1457437721249" class="gt_mobile_holder embed zh-cn" style="touch-action: none;"><div class="gt_input"><input class="geetest_challenge" type="hidden" name="geetest_challenge" value=""><input class="geetest_validate" type="hidden" name="geetest_validate" value=""><input class="geetest_seccode" type="hidden" name="geetest_seccode" value=""></div><svg viewBox="0 0 260 250" style="display: block; overflow: hidden; width: 301px; height: 290px; background-color: rgb(255, 255, 255);"><defs><linearGradient x1="50%" y1="100%" x2="100%" y2="50%" id="gt_loading"><stop offset="0%" stop-color="#FFF" stop-opacity="0"></stop><stop offset="100%" stop-color="#FFF" stop-opacity="1"></stop></linearGradient></defs><defs><clipPath id="gt_clip_0_1"><rect height="81" x="0" width="11" y="0"></rect></clipPath><clipPath id="gt_clip_1_1"><rect height="81" x="10" width="11" y="0"></rect></clipPath><clipPath id="gt_clip_2_1"><rect height="81" x="20" width="11" y="0"></rect></clipPath><clipPath id="gt_clip_3_1"><rect height="81" x="30" width="11" y="0"></rect></clipPath><clipPath id="gt_clip_4_1"><rect height="81" x="40" width="11" y="0"></rect></clipPath><clipPath id="gt_clip_5_1"><rect height="81" x="50" width="11" y="0"></rect></clipPath><clipPath id="gt_clip_6_1"><rect height="81" x="60" width="11" y="0"></rect></clipPath><clipPath id="gt_clip_7_1"><rect height="81" x="70" width="11" y="0"></rect></clipPath><clipPath id="gt_clip_8_1"><rect height="81" x="80" width="11" y="0"></rect></clipPath><clipPath id="gt_clip_9_1"><rect height="81" x="90" width="11" y="0"></rect></clipPath><clipPath id="gt_clip_10_1"><rect height="81" x="100" width="11" y="0"></rect></clipPath><clipPath id="gt_clip_11_1"><rect height="81" x="110" width="11" y="0"></rect></clipPath><clipPath id="gt_clip_12_1"><rect height="81" x="120" width="11" y="0"></rect></clipPath><clipPath id="gt_clip_13_1"><rect height="81" x="130" width="11" y="0"></rect></clipPath><clipPath id="gt_clip_14_1"><rect height="81" x="140" width="11" y="0"></rect></clipPath><clipPath id="gt_clip_15_1"><rect height="81" x="150" width="11" y="0"></rect></clipPath><clipPath id="gt_clip_16_1"><rect height="81" x="160" width="11" y="0"></rect></clipPath><clipPath id="gt_clip_17_1"><rect height="81" x="170" width="11" y="0"></rect></clipPath><clipPath id="gt_clip_18_1"><rect height="81" x="180" width="11" y="0"></rect></clipPath><clipPath id="gt_clip_19_1"><rect height="81" x="190" width="11" y="0"></rect></clipPath><clipPath id="gt_clip_20_1"><rect height="81" x="200" width="11" y="0"></rect></clipPath><clipPath id="gt_clip_21_1"><rect height="81" x="210" width="11" y="0"></rect></clipPath><clipPath id="gt_clip_22_1"><rect height="81" x="220" width="11" y="0"></rect></clipPath><clipPath id="gt_clip_23_1"><rect height="81" x="230" width="11" y="0"></rect></clipPath><clipPath id="gt_clip_24_1"><rect height="81" x="240" width="11" y="0"></rect></clipPath><clipPath id="gt_clip_25_1"><rect height="81" x="250" width="11" y="0"></rect></clipPath><clipPath id="gt_clip_26_1"><rect height="81" x="0" width="11" y="80"></rect></clipPath><clipPath id="gt_clip_27_1"><rect height="81" x="10" width="11" y="80"></rect></clipPath><clipPath id="gt_clip_28_1"><rect height="81" x="20" width="11" y="80"></rect></clipPath><clipPath id="gt_clip_29_1"><rect height="81" x="30" width="11" y="80"></rect></clipPath><clipPath id="gt_clip_30_1"><rect height="81" x="40" width="11" y="80"></rect></clipPath><clipPath id="gt_clip_31_1"><rect height="81" x="50" width="11" y="80"></rect></clipPath><clipPath id="gt_clip_32_1"><rect height="81" x="60" width="11" y="80"></rect></clipPath><clipPath id="gt_clip_33_1"><rect height="81" x="70" width="11" y="80"></rect></clipPath><clipPath id="gt_clip_34_1"><rect height="81" x="80" width="11" y="80"></rect></clipPath><clipPath id="gt_clip_35_1"><rect height="81" x="90" width="11" y="80"></rect></clipPath><clipPath id="gt_clip_36_1"><rect height="81" x="100" width="11" y="80"></rect></clipPath><clipPath id="gt_clip_37_1"><rect height="81" x="110" width="11" y="80"></rect></clipPath><clipPath id="gt_clip_38_1"><rect height="81" x="120" width="11" y="80"></rect></clipPath><clipPath id="gt_clip_39_1"><rect height="81" x="130" width="11" y="80"></rect></clipPath><clipPath id="gt_clip_40_1"><rect height="81" x="140" width="11" y="80"></rect></clipPath><clipPath id="gt_clip_41_1"><rect height="81" x="150" width="11" y="80"></rect></clipPath><clipPath id="gt_clip_42_1"><rect height="81" x="160" width="11" y="80"></rect></clipPath><clipPath id="gt_clip_43_1"><rect height="81" x="170" width="11" y="80"></rect></clipPath><clipPath id="gt_clip_44_1"><rect height="81" x="180" width="11" y="80"></rect></clipPath><clipPath id="gt_clip_45_1"><rect height="81" x="190" width="11" y="80"></rect></clipPath><clipPath id="gt_clip_46_1"><rect height="81" x="200" width="11" y="80"></rect></clipPath><clipPath id="gt_clip_47_1"><rect height="81" x="210" width="11" y="80"></rect></clipPath><clipPath id="gt_clip_48_1"><rect height="81" x="220" width="11" y="80"></rect></clipPath><clipPath id="gt_clip_49_1"><rect height="81" x="230" width="11" y="80"></rect></clipPath><clipPath id="gt_clip_50_1"><rect height="81" x="240" width="11" y="80"></rect></clipPath><clipPath id="gt_clip_51_1"><rect height="81" x="250" width="11" y="80"></rect></clipPath></defs><defs><g id="gt_bg_1"><g><image clip-path="url(#gt_clip_0_1)" height="160" x="-157" width="312" y="-80" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://static.geetest.com/pictures/gt/7593fe5fb/bg/885dda22b.webp"></image></g><g><image clip-path="url(#gt_clip_1_1)" height="160" x="-135" width="312" y="-80" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://static.geetest.com/pictures/gt/7593fe5fb/bg/885dda22b.webp"></image></g><g><image clip-path="url(#gt_clip_2_1)" height="160" x="-245" width="312" y="-80" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://static.geetest.com/pictures/gt/7593fe5fb/bg/885dda22b.webp"></image></g><g><image clip-path="url(#gt_clip_3_1)" height="160" x="-247" width="312" y="-80" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://static.geetest.com/pictures/gt/7593fe5fb/bg/885dda22b.webp"></image></g><g><image clip-path="url(#gt_clip_4_1)" height="160" x="-141" width="312" y="-80" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://static.geetest.com/pictures/gt/7593fe5fb/bg/885dda22b.webp"></image></g><g><image clip-path="url(#gt_clip_5_1)" height="160" x="-119" width="312" y="-80" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://static.geetest.com/pictures/gt/7593fe5fb/bg/885dda22b.webp"></image></g><g><image clip-path="url(#gt_clip_6_1)" height="160" x="-181" width="312" y="-80" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://static.geetest.com/pictures/gt/7593fe5fb/bg/885dda22b.webp"></image></g><g><image clip-path="url(#gt_clip_7_1)" height="160" x="-183" width="312" y="-80" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://static.geetest.com/pictures/gt/7593fe5fb/bg/885dda22b.webp"></image></g><g><image clip-path="url(#gt_clip_8_1)" height="160" x="-29" width="312" y="-80" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://static.geetest.com/pictures/gt/7593fe5fb/bg/885dda22b.webp"></image></g><g><image clip-path="url(#gt_clip_9_1)" height="160" x="-7" width="312" y="-80" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://static.geetest.com/pictures/gt/7593fe5fb/bg/885dda22b.webp"></image></g><g><image clip-path="url(#gt_clip_10_1)" height="160" x="-189" width="312" y="-80" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://static.geetest.com/pictures/gt/7593fe5fb/bg/885dda22b.webp"></image></g><g><image clip-path="url(#gt_clip_11_1)" height="160" x="-191" width="312" y="-80" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://static.geetest.com/pictures/gt/7593fe5fb/bg/885dda22b.webp"></image></g><g><image clip-path="url(#gt_clip_12_1)" height="160" x="35" width="312" y="-80" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://static.geetest.com/pictures/gt/7593fe5fb/bg/885dda22b.webp"></image></g><g><image clip-path="url(#gt_clip_13_1)" height="160" x="57" width="312" y="-80" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://static.geetest.com/pictures/gt/7593fe5fb/bg/885dda22b.webp"></image></g><g><image clip-path="url(#gt_clip_14_1)" height="160" x="115" width="312" y="-80" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://static.geetest.com/pictures/gt/7593fe5fb/bg/885dda22b.webp"></image></g><g><image clip-path="url(#gt_clip_15_1)" height="160" x="113" width="312" y="-80" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://static.geetest.com/pictures/gt/7593fe5fb/bg/885dda22b.webp"></image></g><g><image clip-path="url(#gt_clip_16_1)" height="160" x="147" width="312" y="-80" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://static.geetest.com/pictures/gt/7593fe5fb/bg/885dda22b.webp"></image></g><g><image clip-path="url(#gt_clip_17_1)" height="160" x="169" width="312" y="-80" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://static.geetest.com/pictures/gt/7593fe5fb/bg/885dda22b.webp"></image></g><g><image clip-path="url(#gt_clip_18_1)" height="160" x="59" width="312" y="-80" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://static.geetest.com/pictures/gt/7593fe5fb/bg/885dda22b.webp"></image></g><g><image clip-path="url(#gt_clip_19_1)" height="160" x="57" width="312" y="-80" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://static.geetest.com/pictures/gt/7593fe5fb/bg/885dda22b.webp"></image></g><g><image clip-path="url(#gt_clip_20_1)" height="160" x="139" width="312" y="-80" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://static.geetest.com/pictures/gt/7593fe5fb/bg/885dda22b.webp"></image></g><g><image clip-path="url(#gt_clip_21_1)" height="160" x="161" width="312" y="-80" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://static.geetest.com/pictures/gt/7593fe5fb/bg/885dda22b.webp"></image></g><g><image clip-path="url(#gt_clip_22_1)" height="160" x="3" width="312" y="-80" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://static.geetest.com/pictures/gt/7593fe5fb/bg/885dda22b.webp"></image></g><g><image clip-path="url(#gt_clip_23_1)" height="160" x="1" width="312" y="-80" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://static.geetest.com/pictures/gt/7593fe5fb/bg/885dda22b.webp"></image></g><g><image clip-path="url(#gt_clip_24_1)" height="160" x="35" width="312" y="-80" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://static.geetest.com/pictures/gt/7593fe5fb/bg/885dda22b.webp"></image></g><g><image clip-path="url(#gt_clip_25_1)" height="160" x="57" width="312" y="-80" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://static.geetest.com/pictures/gt/7593fe5fb/bg/885dda22b.webp"></image></g><g><image clip-path="url(#gt_clip_26_1)" height="160" x="-145" width="312" y="80" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://static.geetest.com/pictures/gt/7593fe5fb/bg/885dda22b.webp"></image></g><g><image clip-path="url(#gt_clip_27_1)" height="160" x="-147" width="312" y="80" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://static.geetest.com/pictures/gt/7593fe5fb/bg/885dda22b.webp"></image></g><g><image clip-path="url(#gt_clip_28_1)" height="160" x="-257" width="312" y="80" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://static.geetest.com/pictures/gt/7593fe5fb/bg/885dda22b.webp"></image></g><g><image clip-path="url(#gt_clip_29_1)" height="160" x="-235" width="312" y="80" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://static.geetest.com/pictures/gt/7593fe5fb/bg/885dda22b.webp"></image></g><g><image clip-path="url(#gt_clip_30_1)" height="160" x="-129" width="312" y="80" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://static.geetest.com/pictures/gt/7593fe5fb/bg/885dda22b.webp"></image></g><g><image clip-path="url(#gt_clip_31_1)" height="160" x="-131" width="312" y="80" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://static.geetest.com/pictures/gt/7593fe5fb/bg/885dda22b.webp"></image></g><g><image clip-path="url(#gt_clip_32_1)" height="160" x="-193" width="312" y="80" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://static.geetest.com/pictures/gt/7593fe5fb/bg/885dda22b.webp"></image></g><g><image clip-path="url(#gt_clip_33_1)" height="160" x="-171" width="312" y="80" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://static.geetest.com/pictures/gt/7593fe5fb/bg/885dda22b.webp"></image></g><g><image clip-path="url(#gt_clip_34_1)" height="160" x="-17" width="312" y="80" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://static.geetest.com/pictures/gt/7593fe5fb/bg/885dda22b.webp"></image></g><g><image clip-path="url(#gt_clip_35_1)" height="160" x="-19" width="312" y="80" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://static.geetest.com/pictures/gt/7593fe5fb/bg/885dda22b.webp"></image></g><g><image clip-path="url(#gt_clip_36_1)" height="160" x="-201" width="312" y="80" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://static.geetest.com/pictures/gt/7593fe5fb/bg/885dda22b.webp"></image></g><g><image clip-path="url(#gt_clip_37_1)" height="160" x="-179" width="312" y="80" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://static.geetest.com/pictures/gt/7593fe5fb/bg/885dda22b.webp"></image></g><g><image clip-path="url(#gt_clip_38_1)" height="160" x="47" width="312" y="80" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://static.geetest.com/pictures/gt/7593fe5fb/bg/885dda22b.webp"></image></g><g><image clip-path="url(#gt_clip_39_1)" height="160" x="45" width="312" y="80" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://static.geetest.com/pictures/gt/7593fe5fb/bg/885dda22b.webp"></image></g><g><image clip-path="url(#gt_clip_40_1)" height="160" x="103" width="312" y="80" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://static.geetest.com/pictures/gt/7593fe5fb/bg/885dda22b.webp"></image></g><g><image clip-path="url(#gt_clip_41_1)" height="160" x="125" width="312" y="80" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://static.geetest.com/pictures/gt/7593fe5fb/bg/885dda22b.webp"></image></g><g><image clip-path="url(#gt_clip_42_1)" height="160" x="159" width="312" y="80" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://static.geetest.com/pictures/gt/7593fe5fb/bg/885dda22b.webp"></image></g><g><image clip-path="url(#gt_clip_43_1)" height="160" x="157" width="312" y="80" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://static.geetest.com/pictures/gt/7593fe5fb/bg/885dda22b.webp"></image></g><g><image clip-path="url(#gt_clip_44_1)" height="160" x="47" width="312" y="80" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://static.geetest.com/pictures/gt/7593fe5fb/bg/885dda22b.webp"></image></g><g><image clip-path="url(#gt_clip_45_1)" height="160" x="69" width="312" y="80" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://static.geetest.com/pictures/gt/7593fe5fb/bg/885dda22b.webp"></image></g><g><image clip-path="url(#gt_clip_46_1)" height="160" x="151" width="312" y="80" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://static.geetest.com/pictures/gt/7593fe5fb/bg/885dda22b.webp"></image></g><g><image clip-path="url(#gt_clip_47_1)" height="160" x="149" width="312" y="80" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://static.geetest.com/pictures/gt/7593fe5fb/bg/885dda22b.webp"></image></g><g><image clip-path="url(#gt_clip_48_1)" height="160" x="-9" width="312" y="80" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://static.geetest.com/pictures/gt/7593fe5fb/bg/885dda22b.webp"></image></g><g><image clip-path="url(#gt_clip_49_1)" height="160" x="13" width="312" y="80" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://static.geetest.com/pictures/gt/7593fe5fb/bg/885dda22b.webp"></image></g><g><image clip-path="url(#gt_clip_50_1)" height="160" x="47" width="312" y="80" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://static.geetest.com/pictures/gt/7593fe5fb/bg/885dda22b.webp"></image></g><g><image clip-path="url(#gt_clip_51_1)" height="160" x="45" width="312" y="80" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://static.geetest.com/pictures/gt/7593fe5fb/bg/885dda22b.webp"></image></g></g></defs><defs><g id="gt_fullbg_1"><g><image clip-path="url(#gt_clip_0_1)" height="160" x="-157" width="312" y="-80" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://static.geetest.com/pictures/gt/7593fe5fb/7593fe5fb.webp"></image></g><g><image clip-path="url(#gt_clip_1_1)" height="160" x="-135" width="312" y="-80" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://static.geetest.com/pictures/gt/7593fe5fb/7593fe5fb.webp"></image></g><g><image clip-path="url(#gt_clip_2_1)" height="160" x="-245" width="312" y="-80" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://static.geetest.com/pictures/gt/7593fe5fb/7593fe5fb.webp"></image></g><g><image clip-path="url(#gt_clip_3_1)" height="160" x="-247" width="312" y="-80" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://static.geetest.com/pictures/gt/7593fe5fb/7593fe5fb.webp"></image></g><g><image clip-path="url(#gt_clip_4_1)" height="160" x="-141" width="312" y="-80" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://static.geetest.com/pictures/gt/7593fe5fb/7593fe5fb.webp"></image></g><g><image clip-path="url(#gt_clip_5_1)" height="160" x="-119" width="312" y="-80" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://static.geetest.com/pictures/gt/7593fe5fb/7593fe5fb.webp"></image></g><g><image clip-path="url(#gt_clip_6_1)" height="160" x="-181" width="312" y="-80" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://static.geetest.com/pictures/gt/7593fe5fb/7593fe5fb.webp"></image></g><g><image clip-path="url(#gt_clip_7_1)" height="160" x="-183" width="312" y="-80" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://static.geetest.com/pictures/gt/7593fe5fb/7593fe5fb.webp"></image></g><g><image clip-path="url(#gt_clip_8_1)" height="160" x="-29" width="312" y="-80" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://static.geetest.com/pictures/gt/7593fe5fb/7593fe5fb.webp"></image></g><g><image clip-path="url(#gt_clip_9_1)" height="160" x="-7" width="312" y="-80" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://static.geetest.com/pictures/gt/7593fe5fb/7593fe5fb.webp"></image></g><g><image clip-path="url(#gt_clip_10_1)" height="160" x="-189" width="312" y="-80" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://static.geetest.com/pictures/gt/7593fe5fb/7593fe5fb.webp"></image></g><g><image clip-path="url(#gt_clip_11_1)" height="160" x="-191" width="312" y="-80" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://static.geetest.com/pictures/gt/7593fe5fb/7593fe5fb.webp"></image></g><g><image clip-path="url(#gt_clip_12_1)" height="160" x="35" width="312" y="-80" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://static.geetest.com/pictures/gt/7593fe5fb/7593fe5fb.webp"></image></g><g><image clip-path="url(#gt_clip_13_1)" height="160" x="57" width="312" y="-80" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://static.geetest.com/pictures/gt/7593fe5fb/7593fe5fb.webp"></image></g><g><image clip-path="url(#gt_clip_14_1)" height="160" x="115" width="312" y="-80" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://static.geetest.com/pictures/gt/7593fe5fb/7593fe5fb.webp"></image></g><g><image clip-path="url(#gt_clip_15_1)" height="160" x="113" width="312" y="-80" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://static.geetest.com/pictures/gt/7593fe5fb/7593fe5fb.webp"></image></g><g><image clip-path="url(#gt_clip_16_1)" height="160" x="147" width="312" y="-80" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://static.geetest.com/pictures/gt/7593fe5fb/7593fe5fb.webp"></image></g><g><image clip-path="url(#gt_clip_17_1)" height="160" x="169" width="312" y="-80" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://static.geetest.com/pictures/gt/7593fe5fb/7593fe5fb.webp"></image></g><g><image clip-path="url(#gt_clip_18_1)" height="160" x="59" width="312" y="-80" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://static.geetest.com/pictures/gt/7593fe5fb/7593fe5fb.webp"></image></g><g><image clip-path="url(#gt_clip_19_1)" height="160" x="57" width="312" y="-80" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://static.geetest.com/pictures/gt/7593fe5fb/7593fe5fb.webp"></image></g><g><image clip-path="url(#gt_clip_20_1)" height="160" x="139" width="312" y="-80" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://static.geetest.com/pictures/gt/7593fe5fb/7593fe5fb.webp"></image></g><g><image clip-path="url(#gt_clip_21_1)" height="160" x="161" width="312" y="-80" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://static.geetest.com/pictures/gt/7593fe5fb/7593fe5fb.webp"></image></g><g><image clip-path="url(#gt_clip_22_1)" height="160" x="3" width="312" y="-80" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://static.geetest.com/pictures/gt/7593fe5fb/7593fe5fb.webp"></image></g><g><image clip-path="url(#gt_clip_23_1)" height="160" x="1" width="312" y="-80" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://static.geetest.com/pictures/gt/7593fe5fb/7593fe5fb.webp"></image></g><g><image clip-path="url(#gt_clip_24_1)" height="160" x="35" width="312" y="-80" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://static.geetest.com/pictures/gt/7593fe5fb/7593fe5fb.webp"></image></g><g><image clip-path="url(#gt_clip_25_1)" height="160" x="57" width="312" y="-80" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://static.geetest.com/pictures/gt/7593fe5fb/7593fe5fb.webp"></image></g><g><image clip-path="url(#gt_clip_26_1)" height="160" x="-145" width="312" y="80" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://static.geetest.com/pictures/gt/7593fe5fb/7593fe5fb.webp"></image></g><g><image clip-path="url(#gt_clip_27_1)" height="160" x="-147" width="312" y="80" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://static.geetest.com/pictures/gt/7593fe5fb/7593fe5fb.webp"></image></g><g><image clip-path="url(#gt_clip_28_1)" height="160" x="-257" width="312" y="80" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://static.geetest.com/pictures/gt/7593fe5fb/7593fe5fb.webp"></image></g><g><image clip-path="url(#gt_clip_29_1)" height="160" x="-235" width="312" y="80" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://static.geetest.com/pictures/gt/7593fe5fb/7593fe5fb.webp"></image></g><g><image clip-path="url(#gt_clip_30_1)" height="160" x="-129" width="312" y="80" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://static.geetest.com/pictures/gt/7593fe5fb/7593fe5fb.webp"></image></g><g><image clip-path="url(#gt_clip_31_1)" height="160" x="-131" width="312" y="80" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://static.geetest.com/pictures/gt/7593fe5fb/7593fe5fb.webp"></image></g><g><image clip-path="url(#gt_clip_32_1)" height="160" x="-193" width="312" y="80" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://static.geetest.com/pictures/gt/7593fe5fb/7593fe5fb.webp"></image></g><g><image clip-path="url(#gt_clip_33_1)" height="160" x="-171" width="312" y="80" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://static.geetest.com/pictures/gt/7593fe5fb/7593fe5fb.webp"></image></g><g><image clip-path="url(#gt_clip_34_1)" height="160" x="-17" width="312" y="80" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://static.geetest.com/pictures/gt/7593fe5fb/7593fe5fb.webp"></image></g><g><image clip-path="url(#gt_clip_35_1)" height="160" x="-19" width="312" y="80" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://static.geetest.com/pictures/gt/7593fe5fb/7593fe5fb.webp"></image></g><g><image clip-path="url(#gt_clip_36_1)" height="160" x="-201" width="312" y="80" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://static.geetest.com/pictures/gt/7593fe5fb/7593fe5fb.webp"></image></g><g><image clip-path="url(#gt_clip_37_1)" height="160" x="-179" width="312" y="80" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://static.geetest.com/pictures/gt/7593fe5fb/7593fe5fb.webp"></image></g><g><image clip-path="url(#gt_clip_38_1)" height="160" x="47" width="312" y="80" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://static.geetest.com/pictures/gt/7593fe5fb/7593fe5fb.webp"></image></g><g><image clip-path="url(#gt_clip_39_1)" height="160" x="45" width="312" y="80" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://static.geetest.com/pictures/gt/7593fe5fb/7593fe5fb.webp"></image></g><g><image clip-path="url(#gt_clip_40_1)" height="160" x="103" width="312" y="80" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://static.geetest.com/pictures/gt/7593fe5fb/7593fe5fb.webp"></image></g><g><image clip-path="url(#gt_clip_41_1)" height="160" x="125" width="312" y="80" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://static.geetest.com/pictures/gt/7593fe5fb/7593fe5fb.webp"></image></g><g><image clip-path="url(#gt_clip_42_1)" height="160" x="159" width="312" y="80" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://static.geetest.com/pictures/gt/7593fe5fb/7593fe5fb.webp"></image></g><g><image clip-path="url(#gt_clip_43_1)" height="160" x="157" width="312" y="80" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://static.geetest.com/pictures/gt/7593fe5fb/7593fe5fb.webp"></image></g><g><image clip-path="url(#gt_clip_44_1)" height="160" x="47" width="312" y="80" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://static.geetest.com/pictures/gt/7593fe5fb/7593fe5fb.webp"></image></g><g><image clip-path="url(#gt_clip_45_1)" height="160" x="69" width="312" y="80" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://static.geetest.com/pictures/gt/7593fe5fb/7593fe5fb.webp"></image></g><g><image clip-path="url(#gt_clip_46_1)" height="160" x="151" width="312" y="80" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://static.geetest.com/pictures/gt/7593fe5fb/7593fe5fb.webp"></image></g><g><image clip-path="url(#gt_clip_47_1)" height="160" x="149" width="312" y="80" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://static.geetest.com/pictures/gt/7593fe5fb/7593fe5fb.webp"></image></g><g><image clip-path="url(#gt_clip_48_1)" height="160" x="-9" width="312" y="80" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://static.geetest.com/pictures/gt/7593fe5fb/7593fe5fb.webp"></image></g><g><image clip-path="url(#gt_clip_49_1)" height="160" x="13" width="312" y="80" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://static.geetest.com/pictures/gt/7593fe5fb/7593fe5fb.webp"></image></g><g><image clip-path="url(#gt_clip_50_1)" height="160" x="47" width="312" y="80" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://static.geetest.com/pictures/gt/7593fe5fb/7593fe5fb.webp"></image></g><g><image clip-path="url(#gt_clip_51_1)" height="160" x="45" width="312" y="80" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://static.geetest.com/pictures/gt/7593fe5fb/7593fe5fb.webp"></image></g></g></defs><a target="_blank"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="" y="1"></use><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href=""></use><image transform="matrix(1 0 0 1 0 104)" height="52" x="0" width="56" y="0" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://static.geetest.com/pictures/gt/7593fe5fb/slice/885dda22b.png"></image><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="" style="display: inline;"></use></a><g style="fill: rgba(0, 0, 0, 0); stroke: rgb(255, 255, 255); stroke-linecap: round; cursor: pointer; display: none; fill-opacity: 1; stroke-opacity: 1;"><path d="M 248 25 a 10 10 0 1 1 4 -12 M 249 13 l 3 1 l 1.5 -3.5" style="stroke-width: 2px; stroke-linejoin: round; stroke: rgb(255, 255, 255);"></path></g><g style="fill-opacity: 1; stroke-opacity: 1; display: inline;"><rect style="fill: rgb(85, 198, 240);" height="160" x="0" width="260" y="0"></rect><line style="stroke-width: 5px; stroke: url(http://www.geetest.com/mobile-pc#gt_loading);" y1="58" y2="58" x2="150" x1="110"></line><g transform="matrix(1 0 0 1 0 22)"><path d="M 130 58 a 20 20 0 1 1 20 -20" transform="rotate(344.7 130 38)" style="fill-opacity: 0; stroke: url(http://www.geetest.com/mobile-pc#gt_loading); stroke-width: 3px; stroke-linecap: round; stroke-linejoin: round;"></path><text x="130" y="90" style="text-anchor: middle; fill: rgb(255, 255, 255); stroke-width: 0px; font-family: 'Open Sans', Arial, 'Hiragino Sans GB', 'Microsoft YaHei', STHeiti, 'WenQuanYi Micro Hei', SimSun, sans-serif; font-size: 16px;">加载中...</text></g></g><g style="fill-opacity: 0; stroke-opacity: 0; display: none;"><rect style="fill: rgb(85, 198, 240);" height="160" x="0" width="260" y="0"></rect><g transform="matrix(1 0 0 1 0 22)"><circle style="fill-opacity: 0; stroke: rgb(255, 255, 255); stroke-width: 2px;" cx="130" r="20" cy="38"></circle><path d="M 118 40 l 9 8 l 15 -17" style="fill-opacity: 0; stroke: rgb(255, 255, 255); stroke-width: 3px; stroke-linecap: round; stroke-linejoin: round;"></path><text x="130" y="80" style="text-anchor: middle; fill: rgb(255, 255, 255); stroke-width: 0px; font-family: 'Open Sans', Arial, 'Hiragino Sans GB', 'Microsoft YaHei', STHeiti, 'WenQuanYi Micro Hei', SimSun, sans-serif; font-size: 16px; font-weight: bold;">验证成功</text><text x="130" y="100" style="text-anchor: middle; fill: rgb(255, 255, 255); stroke-width: 0px; font-family: 'Open Sans', Arial, 'Hiragino Sans GB', 'Microsoft YaHei', STHeiti, 'WenQuanYi Micro Hei', SimSun, sans-serif; font-size: 14px;">sec 秒的速度超过 score% 的用户</text></g></g><g style="fill-opacity: 0; stroke-opacity: 0; display: none;"><rect style="fill: rgb(233, 86, 50);" height="160" x="0" width="260" y="0"></rect><g transform="matrix(1 0 0 1 0 22)"><circle style="fill-opacity: 0; stroke: rgb(255, 255, 255); stroke-width: 2px;" cx="130" r="20" cy="38"></circle><path d="M 121 29 l 18 18 z M 139 29 l -18 18" style="fill-opacity: 0; stroke: rgb(255, 255, 255); stroke-width: 3px; stroke-linecap: round; stroke-linejoin: round;"></path><text x="130" y="80" style="text-anchor: middle; fill: rgb(255, 255, 255); stroke-width: 0px; font-family: 'Open Sans', Arial, 'Hiragino Sans GB', 'Microsoft YaHei', STHeiti, 'WenQuanYi Micro Hei', SimSun, sans-serif; font-size: 16px; font-weight: bold;">验证失败</text><text x="130" y="100" style="text-anchor: middle; fill: rgb(255, 255, 255); stroke-width: 0px; font-family: 'Open Sans', Arial, 'Hiragino Sans GB', 'Microsoft YaHei', STHeiti, 'WenQuanYi Micro Hei', SimSun, sans-serif; font-size: 14px;">拖动滑块将悬浮图像正确拼合</text></g></g><g style="fill-opacity: 0; stroke-opacity: 0; display: none;"><rect style="fill: rgb(235, 169, 33);" height="160" x="0" width="260" y="0"></rect><g transform="matrix(1 0 0 1 0 22)"><circle style="fill-opacity: 0; stroke: rgb(255, 255, 255); stroke-width: 2px;" cx="130" r="20" cy="38"></circle><path d="M 130 38 l -11 -8.25 a 13.75 13.75 0 1 1 0 16.5 l 11 -8.25 z M 135 31 a 1 1 0 1 0 1 1" style="fill-opacity: 0; stroke: rgb(255, 255, 255); stroke-width: 3px; stroke-linecap: round; stroke-linejoin: round;"></path><text x="130" y="80" style="text-anchor: middle; fill: rgb(255, 255, 255); stroke-width: 0px; font-family: 'Open Sans', Arial, 'Hiragino Sans GB', 'Microsoft YaHei', STHeiti, 'WenQuanYi Micro Hei', SimSun, sans-serif; font-size: 16px; font-weight: bold;">再来一次</text><text x="130" y="100" style="text-anchor: middle; fill: rgb(255, 255, 255); stroke-width: 0px; font-family: 'Open Sans', Arial, 'Hiragino Sans GB', 'Microsoft YaHei', STHeiti, 'WenQuanYi Micro Hei', SimSun, sans-serif; font-size: 14px;">哇哦～怪物吃了拼图 count 秒后重试</text></g></g><g style="fill-opacity: 0; stroke-opacity: 0; display: none;"><rect style="fill: rgb(235, 169, 33);" height="160" x="0" width="260" y="0"></rect><g transform="matrix(1 0 0 1 0 22)"><circle style="fill-opacity: 0; stroke: rgb(255, 255, 255); stroke-width: 2px;" cx="130" r="20" cy="38"></circle><path d="M 130 24 l 0 18 z M 131 48 a 1 1 0 1 0 0 1" style="fill-opacity: 0; stroke: rgb(255, 255, 255); stroke-width: 3px; stroke-linecap: round; stroke-linejoin: round;"></path><text x="130" y="80" style="text-anchor: middle; fill: rgb(255, 255, 255); stroke-width: 0px; font-family: 'Open Sans', Arial, 'Hiragino Sans GB', 'Microsoft YaHei', STHeiti, 'WenQuanYi Micro Hei', SimSun, sans-serif; font-size: 16px; font-weight: bold;">尝试过多</text><text x="130" y="100" style="text-anchor: middle; fill: rgb(255, 255, 255); stroke-width: 0px; font-family: 'Open Sans', Arial, 'Hiragino Sans GB', 'Microsoft YaHei', STHeiti, 'WenQuanYi Micro Hei', SimSun, sans-serif; font-size: 14px;">系统正在自动刷新图片</text></g></g><g style="fill-opacity: 0; stroke-opacity: 0; display: none;"><rect style="fill: rgb(235, 169, 33);" height="160" x="0" width="260" y="0"></rect><g transform="matrix(1 0 0 1 0 22)"><circle style="fill-opacity: 0; stroke: rgb(255, 255, 255); stroke-width: 2px;" cx="130" r="20" cy="38"></circle><path d="M 130 24 l 0 18 z M 131 48 a 1 1 0 1 0 0 1" style="fill-opacity: 0; stroke: rgb(255, 255, 255); stroke-width: 3px; stroke-linecap: round; stroke-linejoin: round;"></path><text x="130" y="80" style="text-anchor: middle; fill: rgb(255, 255, 255); stroke-width: 0px; font-family: 'Open Sans', Arial, 'Hiragino Sans GB', 'Microsoft YaHei', STHeiti, 'WenQuanYi Micro Hei', SimSun, sans-serif; font-size: 16px; font-weight: bold;">出现错误</text><text x="130" y="100" style="text-anchor: middle; fill: rgb(255, 255, 255); stroke-width: 0px; font-family: 'Open Sans', Arial, 'Hiragino Sans GB', 'Microsoft YaHei', STHeiti, 'WenQuanYi Micro Hei', SimSun, sans-serif; font-size: 14px;">请关闭验证重试</text></g></g><g transform="matrix(1 0 0 1 0 160)"><g><rect style="fill: rgb(74, 90, 106);" height="56" x="0" width="260" y="0"></rect><rect style="fill: rgb(255, 255, 255);" height="34" x="6" width="248" rx="17" y="11"></rect><g transform="translate(20,23)" style="display: none; fill: rgb(74, 90, 106);"><circle cx="5" r="4" cy="5"></circle><circle cx="20" r="4" cy="5"></circle><circle cx="35" r="4" cy="5"></circle></g><text x="150" y="33" style="text-anchor: middle; fill: rgb(74, 90, 106); stroke-width: 0px; font-family: 'Open Sans', Arial, 'Hiragino Sans GB', 'Microsoft YaHei', STHeiti, 'WenQuanYi Micro Hei', SimSun, sans-serif; font-size: 12px; display: none; fill-opacity: 1; stroke-opacity: 1;">按住左边滑块，拖动完成上方拼图</text></g><g transform="matrix(1 0 0 1 6 4)" style="fill: rgb(0, 153, 0); stroke: rgb(170, 170, 170); cursor: pointer;"><circle style="fill: rgb(255, 255, 255); stroke-width: 1.5px;" cx="24" r="24" cy="24"></circle><line style="stroke-width: 3px; stroke-linecap: round;" y1="15" y2="33" x2="16" x1="16"></line><line style="stroke-width: 3px; stroke-linecap: round;" y1="15" y2="33" x2="24" x1="24"></line><line style="stroke-width: 3px; stroke-linecap: round;" y1="15" y2="33" x2="32" x1="32"></line></g><g><a xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.geetest.com/contact#report" target="_blank"><polyline points="22 67 12 67 12 83 27 83 27 73" style="fill: rgb(255, 255, 255); stroke: rgb(189, 191, 193); stroke-width: 1px; stroke-linejoin: round;"></polyline><line style="fill: rgb(255, 255, 255); stroke: rgb(189, 191, 193); stroke-width: 1.5px; stroke-linecap: round;" y1="78" y2="68" x2="26" x1="19"></line><text x="32" y="80" style="fill: rgb(189, 191, 193); stroke-width: 0px; font-family: 'Open Sans', Arial, 'Hiragino Sans GB', 'Microsoft YaHei', STHeiti, 'WenQuanYi Micro Hei', SimSun, sans-serif; font-size: 14px;">反馈</text></a><a style="display: inline;" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.geetest.com" target="_blank"><image x="185" y="66" width="65" height="20" xlink:href="http://static.geetest.com/static/simple/logo.5.2.6.svg"></image></a></g></g></svg></div></div>
+<div id="success" class="hide">
+<div class="success"></div>
+<h2>太棒了</h2>
+<p class="tast">您刚刚体验了酷炫的新一代验证方式！</p>
+<a href="/exp_normal" class="try btn font-15 bg-cyan">再试一次</a>
+</div>
+<script>
+// alert(document.documentElement.clientWidth);
+var initGeetest = (function (window, document) {
+var random = function () {
+return parseInt(Math.random() * 10000) + (new Date()).valueOf();
+};
+var callbacks = [];
+var status = "loading";
+// 加载Geetest库
+var cb = "geetest_" + random();
+window[cb] = function () {
+status = "loaded";
+window[cb] = undefined;
+try {
+delete window[cb];
+} catch (e) {
+}
+for (var i = 0, len = callbacks.length; i < len; i = i + 1) {
+callbacks[i]();
+}
+};
+var s = document.createElement("script");
+s.onerror = function () {
+status = "fail";
+for (var i = 0, len = callbacks.length; i < len; i = i + 1) {
+callbacks[i]();
+}
+};
+s.src = (location.protocol === "https:" ? "https:" : "http:") + "//api.geetest.com/get.php?callback=" + cb;
+document.getElementsByTagName("head")[0].appendChild(s);
+return function (config, callback) {
+var protocol = config.https ? "https://" : "http://";
+var initGeetest = function () {
+callback(new window.Geetest(config));
+};
+var backendDown = function () {
+var s = document.createElement("script");
+s.id = "gt_lib";
+s.src = protocol + "static.geetest.com/js/geetest.0.0.0.js";
+s.charset = "UTF-8";
+s.type = "text/javascript";
+head.appendChild(s);
+s.onload = s.onreadystatechange = function () {
+if (!this.readyState || this.readyState === "loaded" || this.readyState === "complete") {
+initGeetest();
+s.onload = s.onreadystatechange = null;
+}
+};
+};
+if (status === "loaded") {
+// Geetest对象已经存在，则直接初始化
+initGeetest();
+} else if (status === "fail") {
+// 无法动态获取Geetest库，则去获取geetest.0.0.0.js
+backendDown();
+} else if (status === "loading") {
+// 之前已经去加载Geetest库了，将回调加入callbacks，等Geetest库好后去回调
+callbacks.push(function () {
+if (status === "fail") {
+backendDown();
+} else {
+initGeetest();
+}
+});
+} else {
+}
+};
+}(window, document));
+var tasteEle = document.getElementById("taste");
+var popEle = document.getElementById("pop");
+var successEle = document.getElementById("success");
+var loginBtn = document.getElementById("login");
+var show = function (ele) {
+ele.className = ele.className.replace("hide", "show");
+};
+var hide = function (ele) {
+ele.className = ele.className.replace("show", "hide");
+};
+window.init = function (config) {
+console.log(config);
+initGeetest({
+gt: config.gt,
+challenge: config.challenge,
+product: "embed",
+width: "301px",
+offline: !config.success
+}, function (obj) {
+window.o = obj;
+o.appendTo("#pop");
+o.onReady(function () {
+popEle.firstChild.addEventListener("click", function (e) {
+e.stopPropagation();
+});
+});
+o.onSuccess(function () {
+validate(o, function (result) {
+if (result === "success") {
+hide(popEle);
+hide(tasteEle);
+show(successEle);
+} else {
+o.refresh();
+}
+});
+});
+});
+};
+var validate = function (captcha, cb) {
+var values = captcha.getValidate();
+var query = "geetest_challenge=" + values.geetest_challenge + "&geetest_validate=" + values.geetest_validate + "&geetest_seccode=" + values.geetest_seccode + "&callback=handlerResult";
+var script = document.createElement("script");
+script.src = "http://webapi.geetest.com/apis/mobile-server-validate/?" + query;
+script.charset = "utf-8";
+document.body.appendChild(script);
+window.handlerResult = cb;
+};
+var script = document.createElement("script");
+script.src = "http://webapi.geetest.com/apis/start-mobile-captcha/?callback=init";
+script.charset = "utf-8";
+document.body.appendChild(script);
+loginBtn.addEventListener("click", function () {
+if (o) {
+o.refresh();
+}
+show(popEle);
+});
+popEle.addEventListener("click", function () {
+hide(popEle);
+});
+</script><script src="http://webapi.geetest.com/apis/start-mobile-captcha/?callback=init" charset="utf-8"></script>
+
+
+</body></html>
