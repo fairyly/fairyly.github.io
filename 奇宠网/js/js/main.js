@@ -1,6 +1,6 @@
 window.clientPath="http://"+window.location.host;
 require.config({
-    baseUrl: window.clientPath+'/qcw/js/js/',
+    baseUrl: window.clientPath+'/奇宠网/js/js/',
     paths: {
         jquery:'lib/jquery',
         doT:'lib/doT.min',
