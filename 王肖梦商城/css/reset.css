@@ -1,0 +1,31 @@
+html {
+    font-size: 62.5%;
+}
+@media only screen and (min-width: 481px){
+    html {
+        font-size: 94%!important;
+    }
+}
+@media only screen and (min-width: 561px){
+    html {
+        font-size: 109%!important;
+    }
+}
+@media only screen and (min-width: 641px){
+    html {
+        font-size: 125%!important;
+    }
+}
+*{margin: 0;padding: 0;}
+html,body{
+	width: 100%;
+	background-color: #F7F7F7 ;
+	text-align: center;
+}
+a{
+	text-decoration: none;
+	color: #000000;
+}
+ul{
+	list-style: none;
+}

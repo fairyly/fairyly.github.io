@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/swiper-3.3.1.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/lunbo-bigPic.css"/>
+	</head>
+	<body>
+			<!--轮播大图页-->
+	<div class="lunbo-big">
+	  <div class="datu-top">
+	   	  <img src="img/sort/back.png" class="back-lunbo"/>
+	   	  <span>1/4</span>
+	   </div> 
+	   <div class="big-place">
+	   	  <img src="img/shoppingcar/jiazai.png" class="jiazai"/>
+	   	   <!--利用swiper滑动图片-->
+	   	  <div class="swiper-container">
+		    <div class="swiper-wrapper">
+		        <div class="swiper-slide swiper-container1"><img src="img/shoppingcar/datu.png"/></div>
+		        <div class="swiper-slide swiper-container2"><img src="img/shoppingcar/datu.png"/></div>
+		        <div class="swiper-slide swiper-container3"><img src="img/shoppingcar/datu.png"/></div>
+		        <div class="swiper-slide swiper-container4"><img src="img/shoppingcar/datu.png"/></div>       
+		    </div>
+         </div>  
+	   </div>    
+	</div>	
+	<script src="js/jquery-3.1.0.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/swiper-3.3.1.min-2.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+	   
+	    $("img").ready(function(){
+	    	      setTimeout(function(){
+	    	      	  $(".swiper-container").css("opacity",1);
+	    	      },500)
+		    	  var mySwiper = new Swiper ('.swiper-container', {
+		       initialSlide :localStorage["index"],      
+		       direction: 'horizontal',
+//		       loop: true,   
+			   effect : 'overflow',
+			   onSlideChangeEnd: function(swiper){
+		         $(".datu-top span").html((swiper.activeIndex+1)+"/4");
+		      }
+	       }) 
+	       
+	        $(".back-lunbo").on("touchstart",function(){
+	        	   history.back();
+	        })
+	    })
+		
+	</script>
+	</body>
+</html>

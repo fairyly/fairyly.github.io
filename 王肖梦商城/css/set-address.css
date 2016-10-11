@@ -1,0 +1,45 @@
+*{margin: 0;padding: 0;}
+html,body{
+	width: 100%;
+	font-size:10px;
+	background-color: #F7F7F7 ;
+}
+.prodNum{
+	background: #FFFFFF;
+	padding: 1rem 0.5rem;
+}
+.prodNum img{
+	width: 2rem;
+	vertical-align: middle;
+}
+.prodNum p{
+	display: inline-block;
+	border-top: 1px solid #EFEFEF;
+	border-bottom: 1px solid #EFEFEF;
+	padding: 0.4rem  1rem;
+	margin: 0 -0.2rem;
+}
+.prodNum span{
+	color:#A70011;
+}
+.ready-ad{
+	padding: 2%;
+	box-sizing: border-box;
+	width: 100%;
+	background: #FFFFFF;
+	margin-top: 0.5rem;
+	font-size: 1rem;
+	line-height: 200%;
+	color:#D6D6D6;
+}
+.dingwei{
+	width: 4%;
+	vertical-align: middle;
+}
+.set-address{
+	float: right;
+	width: 2%;
+}
+.send-by span{
+	color:#A70011 ;
+}

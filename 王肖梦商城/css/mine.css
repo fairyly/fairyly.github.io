@@ -1,0 +1,138 @@
+/**{padding: 0;margin: 0;}
+html ,body{
+	width: 100%;
+	font-size:10px;
+	background-color: #F1F1F1;
+	text-align: center;	
+}*/
+/*头部*/
+#header{
+	width: 100%;
+	margin: 3% 0;
+	vertical-align:middle;
+}
+#header>a{
+	display: inline-block;
+	width: 3%;
+	/*text-align: left;*/	
+}
+#header a img{
+	width: 100%;
+	vertical-align:bottom;
+	/*margin-left: 5%;*/	
+}
+#title{
+	display: inline-block;
+	width: 90%;
+	font-size: 2rem;
+}
+.exit ,.isload{
+	width: 15%;
+	font-size: 1rem;
+	float: right;
+	margin-top: 2%;
+	position: absolute;
+}
+.exit{	
+	right: 0;
+}
+.isload{
+	right: 10%;
+}
+.show{
+	opacity: 1;
+}
+.hidden{
+	opacity: 0;
+}
+#uesr-head{
+	width: 100%;
+	background: url(../img/mine/headbg.png) no-repeat;
+	background-size: 100% 100%;
+	padding: 13% 0;
+}
+#uesr-head>img{
+	width: 20%;
+	padding: 3%;
+}
+#uesr-head>p{
+	color: #FFFFFF;
+	font-size: 2rem;
+}
+/*全部订单*/
+#order-wrap{
+	width:100%;
+	background: #FFFFFF;
+	text-align: center;	
+}
+#order{
+	width: 100%;
+	padding: 5% 3%;
+	box-sizing: border-box;
+    overflow: hidden;
+}
+#order>span{
+	font-size: 1.5rem;
+	float: left;
+}
+#right{
+	float: right;
+	width: 40%;
+}
+#right a{
+	text-decoration: none;
+}
+#right span {
+	font-size: 1rem;
+	color: #CECECE;
+}
+#right img{
+	width:5%;
+	margin-left:13%;
+	vertical-align: bottom;
+}
+/*图片区*/
+#image {
+	width: 80%;
+	border-top: 1px solid #F1F1F1;
+	display: inline-block;
+	padding: 5% 0;
+}
+#image > a{
+	display: inline-block;
+	width: 13%;
+	margin-left: 10%;
+}
+#image > a:nth-child(1){
+	margin-left:0;
+}
+#image > a:nth-child(4){
+	display: inline-block;
+	width: 19%;
+}
+#image img{
+	width: 100%;
+}
+/**/
+#message{
+	width: 100%;
+	margin-top:3%;
+	background: #FFFFFF;
+	text-align: center;
+}
+#message>li{
+	display: inline-block;
+	width: 80%;
+	padding: 4% 0 ;
+	border-top: 1px solid #F1F1F1;
+}
+#message>li span{
+	float: left;
+	color: #D6D6D6;
+}
+#message>li img{
+	float: right;
+	width:3%;
+}
+
+
