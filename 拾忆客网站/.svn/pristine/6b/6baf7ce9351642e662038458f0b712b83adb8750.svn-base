@@ -1,0 +1,216 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>瀑布流</title>
+<style>
+body, div { margin: 0; padding: 0 }
+img { border: 0 }
+.container { text-align: center }
+.cell { padding: 5px; border: 1px solid #E3E3E3; background: #F5F5F5;width:204px;float: left;margin:10px}
+.container p { line-height: 20px; margin-top: 5px }
+/* more */
+#more { display: block; margin: 10px auto 20px; }
+/* infscr-loading */
+#infscr-loading { bottom: -10px; left: 45%; position: absolute; text-align: center; height: 20px; line-height: 20px; z-index: 100; width: 120px; font-size:12px;color:#535353}
+/* page */
+.page { display: none; font-size: 18px; height: 60px; text-align: center; margin: 20px 0 0 0; }
+.page_num a, .page_num span { margin: 0 2px; background: #000; display: inline-block; width: 30px; height: 28px; line-height: 26px; overflow: hidden; }
+.page_num a { background-position: -65px 0; color: #FF3333; overflow: hidden; }
+.page_num .prev { background-position: 1px -33px; }
+.page_num .unprev { background-position: 1px 0; cursor: default; }
+.page_num .next { background-position: -32px 0; }
+.page_num .unnext { background-position: -32px -33px; cursor: default; }
+.page_num .current { background-position: -99px 0; color: #FFFFFF; }
+.page_num .etc { background-position: -172px 8px; }
+</style>
+<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="scripts/jquery.masonry.js"></script>
+<script type="text/javascript" src="scripts/jquery.infinitescroll.min.js"></script>
+<script type="text/javascript">
+//设置瀑布流
+function item_masonry(){ 
+	$(".cell img").load(function(){ 
+		$(".container").masonry({ // .container是页面里面装瀑布流单元格的容器,项目中最好用ID来指定
+			itemSelector: ".cell", 
+			columnWidth:226,
+			gutterWidth:15								
+		});		
+	});
+
+	//下面同上,指定加载瀑布流的容器
+	$(".container").masonry({ 
+		itemSelector: ".cell", // 每一个单元格的class
+		columnWidth:226, // 每一个单元格的宽
+		gutterWidth:15	// 每一个单元格之间的空隙							
+	});	
+}
+
+$(function(){
+	/*首次打开执行瀑布流*/
+	item_masonry();	
+	
+    //加载效果
+	$(".cell").fadeIn();
+	
+	var sp = 1;//这个变量是静态页的,项目中需要后台来做翻页
+	$(".container").infinitescroll({
+		navSelector  	: "#more", // 加载数据的容器，需要css设置隐藏
+		nextSelector 	: "#more a", // 包含加载数据链接的选择器
+		itemSelector 	: ".cell", // 瀑布流下的单元格class
+//		animate      : true,//当有新数据加载进来的时候，页面是否有动画效果，默认没有
+//		bufferPx     : 40,//载入信息的显示时间，时间越大，载入信息显示时间越短
+//		extraScrollPx: 50, //滚动条距离底部多少像素的时候开始加载，默认150
+		loading:{//加载时的相关设置
+			img: "images/masonry_loading_1.gif",  // 加载动画图片
+			msgText: "加载中", // 加载时显示的文字
+			finishedMsg: "没有更多了。", // 没有数据之后
+			
+			finished: function(){ // 特别注意,这里现在用的是静态加载,实际上,是要后台程序员修改这一块,来做动态加载数据的.
+				sp++;
+				if(sp>=11){ //到第10页结束事件
+					$("#more").remove();
+					$("#infscr-loading").hide();
+					$(window).unbind(".infscr");
+				}
+			}	
+		},
+		errorCallback:function(){  // 加载错误的处理
+			$("#page").hide();
+		}
+	},function(newElements){
+		
+		var $newElems = $(newElements).css({ opacity: 0 }); //当加载时隐藏所有新项目,这么设置,是因为加载到的单元格有图片,不能秒开的话,会造成瀑布流排版错位
+	    $newElems.imagesLoaded(function () {
+	        //在添加到masonry布局之前保证图片载入
+	        $newElems.animate({ opacity: 1 }); // 只有在加载完成之后,才显示加载到的cell
+	        $(".container").masonry('appended', $newElems, true);//新项目添加到瀑布流里面
+	    });
+ 
+	    return;
+	});
+
+});
+
+</script>
+</head>
+
+<body>
+<div class="container">
+    <div class="cell">
+	<img src="http://cued.xunlei.com/demos/publ/img/P_000.jpg">
+      <p>00</p>
+    </div>
+	
+    <div class="cell">
+	<img src="http://cued.xunlei.com/demos/publ/img/P_009.jpg">
+      <p>09</p>
+    </div>
+    
+	<div class="cell">
+	<img src="http://cued.xunlei.com/demos/publ/img/P_014.jpg">
+      <p>14</p>
+    </div>
+    
+	<div class="cell">
+	<img src="http://cued.xunlei.com/demos/publ/img/P_001.jpg">
+      <p>01</p>
+    </div>
+    
+	<div class="cell">
+	<img src="http://cued.xunlei.com/demos/publ/img/P_010.jpg">
+      <p>10</p>
+    </div>
+    
+	<div class="cell">
+	<img src="http://cued.xunlei.com/demos/publ/img/P_016.jpg">
+      <p>16</p>
+    </div>
+    
+	<div class="cell">
+	<img src="http://cued.xunlei.com/demos/publ/img/P_002.jpg">
+      <p>02</p>
+    </div>
+
+    <div class="cell">
+	<img src="http://cued.xunlei.com/demos/publ/img/P_011.jpg">
+      <p>11</p>
+    </div>
+
+    <div class="cell">
+	<img src="http://cued.xunlei.com/demos/publ/img/P_013.jpg">
+      <p>13</p>
+    </div>
+
+    <div class="cell">
+	<img src="http://cued.xunlei.com/demos/publ/img/P_018.jpg">
+      <p>18</p>
+    </div>
+
+    <div class="cell">
+	<img src="http://cued.xunlei.com/demos/publ/img/P_003.jpg">
+      <p>03</p>
+    </div>
+
+    <div class="cell">
+	<img src="http://cued.xunlei.com/demos/publ/img/P_006.jpg">
+      <p>06</p>
+    </div>
+
+    <div class="cell">
+	<img src="http://cued.xunlei.com/demos/publ/img/P_012.jpg">
+      <p>12</p>
+    </div>
+
+    <div class="cell">
+	<img src="http://cued.xunlei.com/demos/publ/img/P_019.jpg">
+      <p>19</p>
+    </div>
+
+    <div class="cell">
+	<img src="http://cued.xunlei.com/demos/publ/img/P_004.jpg">
+      <p>04</p>
+    </div>
+
+    <div class="cell">
+	<img src="http://cued.xunlei.com/demos/publ/img/P_008.jpg">
+      <p>08</p>
+    </div>
+
+    <div class="cell">
+	<img src="http://cued.xunlei.com/demos/publ/img/P_015.jpg">
+      <p>15</p>
+    </div>
+
+    <div class="cell">
+	<img src="http://cued.xunlei.com/demos/publ/img/P_005.jpg">
+      <p>05</p>
+    </div>
+
+    <div class="cell">
+	<img src="http://cued.xunlei.com/demos/publ/img/P_007.jpg">
+      <p>07</p>
+    </div>
+
+    <div class="cell">
+	<img src="http://cued.xunlei.com/demos/publ/img/P_017.jpg">
+      <p>17</p>
+    </div>
+</div>
+<div style="clear:both"></div>
+
+<!--更多,本来是由用户点击加载的,插件会根据你这个东西来自动获取数据,然后加载-->
+<div id="more">
+	<a href="page/2.html"></a>
+</div>
+
+<!--翻页-->
+<div id="page" class="page" style="display:none;">
+    <div class="page_num">
+    	<span class="unprev"></span>
+		<span class="current">1</span>
+		<a href="#this" class="next"></a> 
+	</div>
+</div>
+</body>
+</html>

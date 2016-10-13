@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!-- saved from url=(0044)http://www.muzilei.com/demo/jquery.niceForm/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<title>无标题文档</title>
+<link rel="stylesheet" href="css/select.css" type="text/css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="js/select.js"></script>
+<style type="text/css">
+body, td, th {
+	font-size: 12px;
+}
+</style>
+<script type="text/javascript">
+$(function(){
+	//设置select宽度
+	$("select.select").each(function(){
+		$(this).attr("data-width",$(this).width());
+	})
+	$("select").niceForm({
+ 		eventType:'click',
+		change:function(){}
+      });
+ 	});
+</script>
+<style type="text/css"></style></head>
+
+<body>
+<!-- 如果有多个select就必须为select设置不同id -->
+<p>单选</p>
+<select name="select" id="select_1" class="select">
+	<option value="0">--请选择--</option>
+	<option value="1">陕西</option>
+	<option value="2" selected="selected">广东</option>
+	<option value="3">北京北京北京北京</option>
+	<option value="4">四川</option>
+	<option value="5">山东</option>
+	<option value="6">河南</option>
+</select>
+
+<select name="blogUserBean.visitLimit" id="select_2" class="select">
+	<option value="">--请选择--</option>
+	<option value="VISIT_LIMIT_CLASS">仅班级可见</option>
+	<option value="VISIT_LIMIT_ALL">所有人可见</option>
+	<option value="VISIT_LIMIT_FRIEND">好友可见</option>
+	<option value="VISIT_LIMIT_SELF">仅自己可见</option>
+</select>
+<p>多选菜单</p>
+<select name="select1" multiple="multiple">
+	<option value="0">选择省份 </option>
+	<option value="1">陕西 </option>
+	<option value="2" selected="selected">广东 </option>
+	<option value="3" selected="selected">北京 </option>
+	<option value="4">四川 </option>
+	<option value="5">山东 </option>
+	<option value="6">河南 </option>
+</select>
+  
+
+
+</body></html>

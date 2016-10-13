@@ -1,0 +1,88 @@
+/*美化表单样式*/
+.select-nice {
+	position: relative;
+	width: auto;
+	height: 28px;
+	line-height: 28px;
+	z-index: 999;
+	display: inline-block;
+ *width:120px;
+ *float:left;
+ *margin:0 5px;
+}
+.select-nice select {
+	position: absolute;
+	left: -999px;
+	top: 0;
+}
+.select-nice-box {
+	height: 20px;
+	line-height: 20px;
+	border: 1px solid #CCC;
+	font-size: 12px;
+	color: #999;
+	padding: 5px 0;
+	position: relative;
+	cursor: pointer;
+}
+.select-nice-box span {
+	display: block;
+	overflow: hidden;
+	height: 20px;
+ 	padding: 0 28px 0 10px;
+ }
+.select-nice-box s {
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 28px;
+	height: 28px;
+	background: #fff url(../image/rect.gif) no-repeat center center;
+}
+.select-nice-option {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	height: auto;
+	border: 1px solid #CCC;
+	border-top: none;
+	background-color: #FFF;
+	display: none;
+	position: absolute;
+	left: 0;
+	top: 28px;
+	width: 100%;
+}
+.select-nice-option li {
+	height: 26px;
+	line-height: 26px;
+	padding: 0 10px;
+	color: #666;
+	border-top: 1px solid #dedede;
+}
+.select-nice-option li.selected {
+	background-color: #EAEAEA;
+}
+.select-nice-option li:hover, .select-nice-option li.hover {
+	background-color: #2897D2;
+	color: #fff;
+	cursor: pointer;
+}
+.select-nice-option li span {
+	display: block;
+}
+.select-nice-option li span i {
+	display: inline-block;
+	width: 8px;
+	height: 8px;
+	border: 1px solid #ccc;
+	background-color: #fff;
+	margin: 3px 5px 0 0;
+	*width:2px;
+  }
+.select-nice-option li.selected span i {
+	background-color: #0C3;
+	border-color: #090
+}
+
