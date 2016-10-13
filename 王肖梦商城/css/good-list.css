@@ -1,0 +1,35 @@
+         .goods-list{
+				text-align: left;
+				background: rgba(0,0,0,0.5);
+				position: absolute;
+				top: 0%;
+				width: 100%;
+				display: none;
+				height: 50rem	
+			}			
+			.list-wrap{
+				position: absolute;
+				left:15%;
+				background: #FFFFFF;	
+				width: 85%;				
+			
+			}
+			.title-list{
+				padding: 2%;
+				font-size: 2rem;
+				}
+			.title-list img{
+				width: 5%;
+				vertical-align: middle;
+				float: right;
+			}
+			
+			.topay-list{				
+				padding: 2%;				
+				list-style: none;
+				height: 50rem						
+			}	
+			.shop-name{
+				background: #F1F1F1;
+				padding: 3%;
+			}

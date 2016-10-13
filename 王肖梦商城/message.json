@@ -1,0 +1,32 @@
+[{
+   "imgUrl":"img/sorthoujiu.png",
+   "content":"GOME酒窖 女王之家干红葡萄酒3支装 750*3",
+   "salesNum":200,
+   "price":99,
+   "peopleLove":100,
+   "date":4
+   },
+   {
+   "imgUrl":"img/sorthoujiu1.png",
+   "content":"哈迪微章何霞珠干红 微章干白起泡葡萄酒",
+   "salesNum":10,
+   "price":128,
+   "peopleLove":10,
+   "date":1   
+   },
+   {
+   "imgUrl":"img/sorthoujiu.png",
+   "content":"GOME酒窖 女王之家干红葡萄酒3支装 750*3",
+   "salesNum":500,
+   "price":188,
+   "peopleLove":300,
+   "date":3
+   },
+   {
+   "imgUrl":"img/sorthoujiu1.png",
+   "content":"GOME酒窖 女王之家干红葡萄酒3支装 750*3",
+   "salesNum":100,
+   "price":199,
+   "peopleLove":200,
+   "date":3
+   }]

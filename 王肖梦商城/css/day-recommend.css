@@ -1,0 +1,123 @@
+	*{
+				padding: 0;
+				margin: 0;
+				font-size: 10px;
+			}
+			body{
+				background: #f0f0f0;
+			}
+			.title{
+				width: 100%;
+				/*text-align: center;*/
+
+				padding: 3% 0;
+				border-bottom: 2px solid lightgray;
+			}
+			.title img{
+				height: 1.8rem;
+				/*position: absolute;*/
+				/*left: 2%;*/
+				vertical-align: middle;
+			}
+			.title h2{
+				display: inline-block;
+				font-size: 1.5rem;
+				text-align: center;
+			}
+		.title #sandian{
+			float: right;
+			position: absolute;
+            right: 5%;
+			}
+			.content{
+				width: 100%;
+				background: #FFFFFF;
+				/*text-align: center;*/
+				overflow: hidden;
+			}
+
+			.tou{
+				width: 20%;
+				display: inline-block;
+				text-align: center;
+				padding-top: 5%;
+			}
+			.tou>img{
+				width: 70%;
+
+			}
+			.right{
+				width: 79%;
+				display: inline-block;
+
+			}
+			.right>div:nth-child(1){
+				width: 100%;
+			}
+			#name{
+				padding-left: 3%;
+			}
+			.right span,p{
+				font-size: 1.3rem;
+				text-align: center;
+				line-height: 2.0rem;
+			}
+			.right>div:nth-child(2){
+				width: 100%;
+				/*background: red;*/
+			}
+			.right div>p{
+				display: inline-block;
+				padding-left: 3%;
+			}
+			.right div>img{
+				height: 1.3rem;
+			}
+			.ul1{
+				list-style: none;
+				padding: 5% 0;
+			    overflow: hidden;
+			    text-align: center;
+			}
+	        .ul1 li{
+				width: 24%;
+				float: left;
+				border-left: 1px solid lightgray;
+			}
+			.ul2{
+				list-style: none;
+				overflow: hidden;
+				border-top: 1px solid lightgray;
+			}
+			.ul2 img{
+				height: 3.0rem;
+			}
+			.ul2 li{
+				width: 25%;
+				float: left;
+				text-align: center;
+				padding: 3% 0;
+			}
+			.ul3{
+				display: none;
+				width: 30%;
+				list-style: none;
+				position: absolute;
+				right: 0;
+				background-color: rgba(0,0,0,0.7);
+			}
+			.ul3 li{
+				padding: 10%;
+		        text-align: center;
+		        border-bottom: 1px solid lightgray;
+				}
+			.ul3 li a{
+				font-size: 1.5rem;
+				text-decoration: none;
+				color: #FFFFFF;
+			}
+			.ul3 li img{
+				width: 20%;
+				vertical-align: middle;
+				float: left;
+			}

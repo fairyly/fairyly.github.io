@@ -1,0 +1,103 @@
+*{
+				padding: 0;
+				margin: 0;
+				font-size: 10px;
+			}
+			body{
+				background: #f0f0f0;
+			}
+			.title{
+				width: 100%;
+				text-align: center;
+			
+				padding: 3% 0;
+				border-bottom: 2px solid lightgray;
+			}
+			.title img{
+				height: 1.8rem;
+				position: absolute;
+				left: 2%;
+				vertical-align: middle;
+			}
+			.title h2{
+				display: inline-block;
+				font-size: 2.0rem;
+				text-align: center;
+			}
+			.content{
+				width: 100%;
+				border-bottom: 2px solid lightgray;
+			}
+			.name{
+				width: 95%;
+				margin: 0 auto;
+				border-bottom: 2px solid lightgray;
+				padding: 5% 0;
+			}
+			.name img{
+				width: 25%;
+				vertical-align: top;
+			}
+			.name .shop{
+				display: inline-block;
+				margin-left: 3%;
+			}
+			.name h2{
+				font-size: 1.5rem;
+				
+				vertical-align: top;
+			}
+			.name ul{
+				list-style: none;
+				margin-top: 10%;
+				
+			}
+			.name ul li{
+				font-size: 1.2rem;
+				padding: 2% 0;
+				color: #A7A7A7;
+			}
+			.name ul li span{
+				font-size: 1.2rem;
+				line-height: 1.5rem;
+				color: #A7A7A7;
+			}
+			
+			.assess{
+					width: 95%;
+				margin: 0 auto;
+				border-bottom: 2px solid lightgray;
+				padding: 3% 0;
+			}
+			.assess ul{
+				list-style: none;
+				width: 100%;
+			}
+			.assess li{
+				font-size: 1.3rem;
+				width: 55%;
+				text-align: center;
+				padding: 2% 0;
+				color: #A7A7A7;
+			}
+			.assess li img{
+				width: 8%;
+				padding: 0 5%;
+			}
+			.assess li span{
+				font-size: 1.3rem;
+				color: #F6994c;
+			}
+			.bottom{
+					width: 95%;
+				margin: 0 auto;
+				padding: 3% 0;
+			}
+			.bottom h2{
+				font-size: 1.3rem;
+			}
+			.bottom p{
+				font-size: 1.2rem;
+				padding: 3% 0;
+				color: #A7A7A7;
+			}

@@ -1,0 +1,139 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+html,body{
+	font-size: 10px;
+	background:#f9f9f9;
+}
+.wrap{
+	position: relative;
+}
+.header{
+	width: 100%;
+	padding: 1rem;	
+	background:#f9f9f9;	
+	overflow: hidden;
+	position: fixed;
+}
+.header a>img{
+	width: 4%;
+	vertical-align: middle;
+}
+.search{
+	display: inline-block;
+	background: red;
+	position: relative;
+	margin: 0 1rem;
+	width: 55%;
+}
+.search >img{
+	position: absolute;
+	width: 10%;
+	top:0.5rem;
+	left:0.5rem;
+}
+.search>input{
+	padding: 0.8rem 15% ;
+	width: 100%;
+	outline: none;
+	border: none;
+}
+.header>span{
+ 	position: absolute;
+ 	top: 35%;
+ 	right: 10%;
+ 	font-size: 1.8rem;
+ }
+.bodyer{
+	overflow: hidden;
+}
+
+/*店铺头像*/
+.title{
+	background: url(../img/dianpushouye/bg.png) no-repeat;
+	background-size: 100% 100%;
+	
+}
+.title>img{
+	width: 25%;
+	margin-top: 5rem;
+	vertical-align: bottom;
+}
+.name {
+	display: inline-block;
+	margin-left:1%;
+	color: #FFFFFF;
+}
+.name >p{
+	line-height: 150%;
+	font-size: 2rem;	
+}
+.star img{
+	width: 10%;
+}
+.bodyer ul{
+	list-style: none;
+	float: left;
+	width: 45%;
+	margin:1rem 0 0 3%;
+	background: white;
+	height: 21rem;
+	position: relative;
+}
+
+.canping img{
+	width:70%;
+	margin-left: 50%;
+	margin-top: 1rem;
+	transform: translateX(-50%);	
+}
+.canping  li:last-child{
+	position: absolute;
+	bottom: 1.5rem;
+	color: #b91b34;
+	font-size: 1.8rem;
+}
+.canping li:nth-child(2){
+	position: absolute;
+	bottom: 3.3rem;
+	color: #999999;
+	font-size: 1.5rem;
+}
+.footer{
+	height: 5rem;
+	/*background: #f2f2f2;*/
+	text-align: center;
+	line-height: 5rem;
+	font-size: 1.5rem;
+	color: #a2a4a6;
+}
+/*分类展开栏*/
+ dl{
+	position: absolute;
+	top:5rem;
+	right: 0;
+	width: 60%;
+	background: #E8E700;
+	color: #FFFFFF;
+     line-height: 150%;
+     background: rgba(0,0,0,0.7);
+     height: 100%;
+     overflow: scroll; 
+}
+dd, dt{
+	padding: 5% 3%;
+	border-bottom: 1px solid #16171A; 
+}
+dt{
+	font-size: 1.5rem;
+}
+dd{
+ font-size:  0.8rem;	
+}
+dl img{
+	width: 5%;
+	float: right;
+}
+
+

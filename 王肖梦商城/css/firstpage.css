@@ -1,0 +1,128 @@
+
+/*头部*/
+#first-header{
+	width: 100%;
+	background:#A80427;
+	position: fixed;
+	color:#EAEAEA;
+}
+#load{
+	width: 100%;
+	font-size: 1.5rem;
+	margin: 3% 0 2%;
+}
+#logo{
+	width: 5%;
+	vertical-align: bottom;
+}
+
+#search{
+	display: inline-block;
+	width: 65%;
+    	font-size: 1.5rem;
+    	padding-left: 10%;
+    	border-radius: 0.3rem;  
+    	background: #EAEAEA;
+    	position: relative;
+    	margin-left: 2%;
+    	vertical-align: middle;
+}
+#search>input{
+	width: 100%;
+	height: 100%;
+	margin: 3% 0;
+    border-radius:0 0.3rem 0.3rem 0;
+	background: #EAEAEA;
+	outline: none;
+    	border: none;
+}
+#sreach-img{
+	position: absolute;	
+	margin: 0 auto;
+	top: 30%;
+	left:4%;
+	width:4%;
+}
+#load > a{
+	color:#EAEAEA;
+	text-decoration: none;
+	margin-left:2%;
+	font-size:1.5rem;
+}
+#yulan{
+	width: 100%;
+	margin-top:14% ;
+}
+/*body内容*/
+#link{
+	width: 100%;
+}
+#link>a>img{
+	display: inline-block;
+	margin: 4%;
+	width: 16%;
+}
+
+/*活动精选*/
+.title{
+	width: 100%;
+	font-size: 2rem;
+	color:#535353;
+}
+.title>img{
+	width:30%;
+	height:1px;	
+	vertical-align: middle;
+}
+.title>span{
+	padding: 0 3%;
+}
+#pics >img{
+	width: 92%;
+	margin-top: 1%;
+}
+#pics img{
+	width: 92%;
+	margin-top: 1%;
+}
+#line-one{
+	margin-top: 2%;
+	display: inline-block;
+	width: 92%;
+}
+#line-one>img:nth-child(1){
+	width:62%;
+}
+#line-one>img:nth-child(2){
+	margin-left: 1%;
+	width:35.4%;
+}
+/*为您推荐*/
+#recommend{
+	margin-bottom: 20%;
+}
+#recommend >li{
+	display: inline-block;
+	background:#FFFFFF;
+	width: 44%;
+	margin:1%;
+}
+#recommend li>img{
+	width: 100%;
+}
+#recommend li>p{
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	padding: 2% 5%;
+	text-align:left;
+	font-size: 1rem;
+}
+#recommend li>p:nth-child(3){
+	color: #A30000;	
+	font-size: 1.8rem;
+}
+#recommend li>p:nth-child(3)>span{
+	font-size: 1rem;
+}
+

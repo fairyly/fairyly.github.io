@@ -1,0 +1,55 @@
+*{margin: 0;padding: 0;}
+html,body{
+	width: 100%;
+	font-size:10px;
+	background: #000000;
+}
+/*轮播放大页*/
+.lunbo-big{
+	text-align: center;
+	color: #FFFFFF;
+	position: relative;
+}
+.datu-top{
+	font-size: 1.5rem;
+	padding: 5%;
+}
+.datu-top img{
+	width: 3%;
+	position: absolute;
+	left: 2%;
+}
+.big-place{
+	width: 100%;
+	text-align: center;
+	height:56.8rem;
+	position: absolute;
+}
+.jiazai{
+	width: 10%;
+	padding: 45%;
+	animation: jiazairoate 0.5s infinite;
+}
+@keyframes jiazairoate{
+	from{transform: rotate(0deg);}
+	to{transform: rotate(360deg);}
+}
+.swiper-container{
+	width: 100%;
+	height: 50rem;
+    position:absolute;
+	top:5%;
+	left: 0;
+	opacity: 0;
+}
+.swiper-wrapper{
+	width: 400%;
+	/*position:absolute;*/
+}
+.swiper-slide{
+	width: 20%;
+}
+.swiper-slide img{
+	width: 100%;
+	/*float: left;*/
+}
