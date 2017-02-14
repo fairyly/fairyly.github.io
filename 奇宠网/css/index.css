@@ -63,8 +63,11 @@
 .index_con_menu{
 	width: 100%;
 	max-width: 640px;
-	height: 5.5rem;
+/* 	height: 5.5rem; */
 	border-bottom: 1px solid #dfdfdf;
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	padding:10px;
 }
 .index_con_menu1,.index_con_menu2,.index_con_menu3,.index_con_menu4{
 	display: inline-block;
